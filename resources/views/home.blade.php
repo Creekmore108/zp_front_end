@@ -9,7 +9,7 @@
       <div class="flex items-center px-2 lg:px-0 ">
         <div class="flex-shrink-0">
           <span class="inline-flex"> 
-          <a href="{{ rout('home') }}"> <img class=" lg:block h-16 w-auto mr-4" src="/img/icons/logo.svg" alt="Zeitplans"></a>
+          <a href="{{ route('home') }}"> <img class=" lg:block h-16 w-auto mr-4" src="/img/icons/logo.svg" alt="Zeitplans"></a>
           <span class="text-white text-5xl mr-16 mt-3">Zeitplans</span></span> 
         </div>
         <div class="hidden lg:block lg:ml-6">
