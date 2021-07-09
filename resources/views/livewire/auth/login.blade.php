@@ -36,6 +36,7 @@
                     @enderror
                 </div>
 
+
                 <div class="mt-6">
                     <label for="password" class="block text-sm font-medium text-gray-700 leading-5">
                         Password
