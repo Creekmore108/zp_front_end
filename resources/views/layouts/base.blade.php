@@ -11,10 +11,14 @@
         @endif
 
         <!-- Favicon -->
-		<link rel="shortcut icon" href="{{ url(asset('favicon.ico')) }}">
+		<!-- <link rel="shortcut icon" href="{{ url(asset('img/favicon.ico')) }}"> -->
+        <link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}">
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+        <!-- Tailwind CDN -->
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ url(mix('css/app.css')) }}">
@@ -27,7 +31,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
     </head>
 
-    <body>
+    <body class="font-sans antialiased">
         @yield('body')
 
         @livewireScripts
