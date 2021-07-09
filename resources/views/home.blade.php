@@ -9,17 +9,17 @@
       <div class="flex items-center px-2 lg:px-0 ">
         <div class="flex-shrink-0">
           <span class="inline-flex"> 
-          <a href="http://zp_front_end.test"> <img class=" lg:block h-16 w-auto mr-4" src="http://zp_front_end.test/img/icons/logo.svg" alt="Zeitplans"></a>
+          <a href="{{ rout('home') }}"> <img class=" lg:block h-16 w-auto mr-4" src="/img/icons/logo.svg" alt="Zeitplans"></a>
           <span class="text-white text-5xl mr-16 mt-3">Zeitplans</span></span> 
         </div>
         <div class="hidden lg:block lg:ml-6">
           <div class="flex space-x-4">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="http://zp_front_end.test?#features" class="text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">Features</a>
-            <a href="http://zp_front_end.test?#faq" class="text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">FAQ</a>
-            <a href="http://zp_front_end.test?#pricing" class="text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">Pricing</a>
+            <a href="/?#features" class="text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">Features</a>
+            <a href="/?#faq" class="text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">FAQ</a>
+            <a href="/?#pricing" class="text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">Pricing</a>
             <a x-data="{}" x-on:click="window.livewire.emitTo('contact-modal', 'show')" class="text-gray-300 cursor-pointer hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">Live Demo</a>
-            <a href="http://zp_front_end.test?#contact" class="text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">Contact</a>
+            <a href="/?#contact" class="text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">Contact</a>
           </div>
         </div>
         <div class="absolute top-0 right-0 mt-4 mr-4">
