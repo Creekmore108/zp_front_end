@@ -1,5 +1,5 @@
-<div class="relative mt-0">
-      <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-b from-gray-600"></div>
+  <div class="relative mt-0">
+    <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-b from-gray-600"></div>
       <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div class="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
           <div class="absolute inset-0">
@@ -16,15 +16,11 @@
             </p>
             <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div class="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
-              <button type="submit" class="inline-flex items-center px-4 py-3 border border-transparent rounded-md font-semibold tracking-widest text-black bg-gradient-to-r from-yellow-600 to-yellow-800 hover:text-white hover:from-yellow-800 hover:to-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600 focus:outline-none focus:border-yellow-800 focus:ring ring-yellow-800 disabled:opacity-25 transition ease-in-out duration-150" x-data="{}" x-on:click="window.livewire.emitTo('contact-modal', 'show')">
-    Get Started
-</button>
+                <x-button class="inline-flex items-center px-4 py-3 border border-transparent rounded-md font-semibold tracking-widest text-black bg-gradient-to-r from-yellow-600 to-yellow-800 hover:text-white hover:from-yellow-800 hover:to-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600 focus:outline-none focus:border-yellow-800 focus:ring ring-yellow-800 disabled:opacity-25 transition ease-in-out duration-150"  x-data="{}" x-on:click="window.livewire.emitTo('contact-modal', 'show')">Get Started</x-button>
                 <!-- <a href="#" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-black bg-gradient-to-r from-yellow-600 to-yellow-800 hover:text-white hover:from-yellow-800 hover:to-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
                   Get started
                 </a> -->
-                <button type="submit" class="inline-flex items-center px-4 py-3 border border-transparent rounded-md font-semibold tracking-widest text-black bg-gradient-to-r from-yellow-600 to-yellow-800 hover:text-white hover:from-yellow-800 hover:to-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600 focus:outline-none focus:border-yellow-800 focus:ring ring-yellow-800 disabled:opacity-25 transition ease-in-out duration-150" x-data="{}" x-on:click="window.livewire.emitTo('contact-modal', 'show')">
-    Live Demo
-</button>
+                <x-button class="inline-flex items-center px-4 py-3 border border-transparent rounded-md font-semibold tracking-widest text-black bg-gradient-to-r from-yellow-600 to-yellow-800 hover:text-white hover:from-yellow-800 hover:to-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600 focus:outline-none focus:border-yellow-800 focus:ring ring-yellow-800 disabled:opacity-25 transition ease-in-out duration-150"  x-data="{}" x-on:click="window.livewire.emitTo('contact-modal', 'show')">Live Demo</x-button>
                 <!-- <a href="#" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-black bg-gradient-to-r from-yellow-600 to-yellow-800 hover:text-white hover:from-yellow-800 hover:to-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
                   Live demo
                 </a> -->
@@ -34,3 +30,4 @@
         </div>
       </div>
     </div>
+  </div>

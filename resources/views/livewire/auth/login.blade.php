@@ -66,12 +66,10 @@
                     </div>
                 </div>
 
-                <div class="mt-6">
-                    <span class="block w-full rounded-md shadow-sm">
-                        <button type="submit" class="flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-yellow-800 border border-transparent rounded-md hover:bg-yellow-600 focus:outline-none focus:border-yellow-800 focus:ring-indigo active:bg-yellow-800 transition duration-150 ease-in-out">
-                            Sign in
-                        </button>
-                    </span>
+                <div class="mt-6 items-center">
+                    
+                        <x-button type="submit" class="flex justify-center w-full px-4 py-3 border border-transparent rounded-md font-semibold tracking-widest text-black bg-gradient-to-r from-yellow-600 to-yellow-800 hover:text-white hover:from-yellow-800 hover:to-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600 focus:outline-none focus:border-yellow-800 focus:ring ring-yellow-800 disabled:opacity-25 transition ease-in-out duration-150" >Sign In</x-button>
+                    
                 </div>
             </form>
         </div>

@@ -10,7 +10,7 @@
           These are the present standard application features. We are continually developing new functionality in which you will be notified when it is ready to use.
         </p>
 
-        <div class="mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-16">
+          <div class="mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-16">
         
             <x-icon-box title="Resource Scheduling" text="The ability to add, delete and update resources that you have available for your memebers to schedule. The calendar has many views (Monthly, Weekly, Daily and as a list) so you can expand or narrow your search as desired. You can upload images of your resources as well as change the status in case one is down for maintenance. The ability to change the color associated with each resource makes it easier to organize and view in the calendar.">
                 <x-icon.calendar class="text-white"/>
@@ -38,18 +38,18 @@
 
             <x-icon-box title="Internal Chat" text="We understand there are many channels to communicate in this day and age but we added an internal chat system so if you are online looking to schedule a resource and you see another member who is online as well you can connect straight away.">  
               <x-icon.chat class="text-white" />
-          </x-icon-box>
+            </x-icon-box>
 
-          <x-icon-box title="System Administration" text="
-                Add, update and delete resources, 
-                Manage member accounts, 
-                Manage the Class Postings,
-                Access reports and logs">
-                <x-icon.cog class="text-white"/>
-          </x-icon-box>
+            <x-icon-box title="System Administration" text="
+                  Add, update and delete resources, 
+                  Manage member accounts, 
+                  Manage the Class Postings,
+                  Access reports and logs">
+                  <x-icon.cog class="text-white"/>
+            </x-icon-box>
 
           </div>
-        </div>
+        
       </div>
     </div>
 </section>

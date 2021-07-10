@@ -1,5 +1,5 @@
 <div class="bg-white">
-      <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <p class="text-center text-sm font-semibold uppercase text-gray-500 tracking-wide">
           Built with industry standard trusted technologies
         </p>
@@ -20,5 +20,5 @@
             <img class="h-14" src="img/livewire_icon.png" alt="Livewire">
           </div>
         </div>
-      </div>
     </div>
+</div>

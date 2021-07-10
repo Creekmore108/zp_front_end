@@ -1,4 +1,4 @@
-<div class="relative pt-16 pb-32 overflow-hidden">
+    <div class="relative pt-16 pb-32 overflow-hidden">
       <div aria-hidden="true" class="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-gray-100"></div>
       <div class="relative">
         <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
@@ -20,9 +20,7 @@
                   All interfaces are mobile ready so your memnbers can access and reserve resources from anywhere at anytime of day.
                 </p>
                 <div class="mt-6">
-                <button type="submit" class="inline-flex items-center px-4 py-3 border border-transparent rounded-md font-semibold tracking-widest text-black bg-gradient-to-r from-yellow-600 to-yellow-800 hover:text-white hover:from-yellow-800 hover:to-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600 focus:outline-none focus:border-yellow-800 focus:ring ring-yellow-800 disabled:opacity-25 transition ease-in-out duration-150" x-data="{}" x-on:click="window.livewire.emitTo('contact-modal', 'show')">
-    Get Started
-</button>
+                <x-button class="inline-flex items-center px-4 py-3 border border-transparent rounded-md font-semibold tracking-widest text-black bg-gradient-to-r from-yellow-600 to-yellow-800 hover:text-white hover:from-yellow-800 hover:to-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600 focus:outline-none focus:border-yellow-800 focus:ring ring-yellow-800 disabled:opacity-25 transition ease-in-out duration-150"  x-data="{}" x-on:click="window.livewire.emitTo('contact-modal', 'show')">Get Started</x-button>
                   <!-- <a href="#" class="inline-flex px-4 py-2 text-base font-medium rounded-md shadow-sm text-black bg-gradient-to-r from-yellow-600 to-yellow-800 hover:text-white hover:from-yellow-800 hover:to-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
                     Get started
                   </a> -->
@@ -64,6 +62,7 @@
                 <span class="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-gray-400 to-gray-600">
                   
                   <x-icon.sparkles class="text-white"/>
+                  
                 </span>
               </div>
               <div class="mt-6">
@@ -74,9 +73,7 @@
                   In the dashboard view you are able to view all your resources, schedules classes and meetings all in one calendar.
                 </p>
                 <div class="mt-6">
-                <button type="submit" class="inline-flex items-center px-4 py-3 border border-transparent rounded-md font-semibold tracking-widest text-black bg-gradient-to-r from-yellow-600 to-yellow-800 hover:text-white hover:from-yellow-800 hover:to-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600 focus:outline-none focus:border-yellow-800 focus:ring ring-yellow-800 disabled:opacity-25 transition ease-in-out duration-150" x-data="{}" x-on:click="window.livewire.emitTo('contact-modal', 'show')">
-    Get Started
-</button>
+                <x-button class="inline-flex items-center px-4 py-3 border border-transparent rounded-md font-semibold tracking-widest text-black bg-gradient-to-r from-yellow-600 to-yellow-800 hover:text-white hover:from-yellow-800 hover:to-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600 focus:outline-none focus:border-yellow-800 focus:ring ring-yellow-800 disabled:opacity-25 transition ease-in-out duration-150"  x-data="{}" x-on:click="window.livewire.emitTo('contact-modal', 'show')">Get Started</x-button>
                   <!-- <a href="#" class="inline-flex px-4 py-2 text-base font-medium rounded-md shadow-sm text-black bg-gradient-to-r from-yellow-600 to-yellow-800 hover:text-white hover:from-yellow-800 hover:to-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
                     Get started
                   </a> -->
@@ -92,3 +89,5 @@
         </div>
       </div>
     </div>
+
+  
