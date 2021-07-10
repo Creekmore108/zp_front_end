@@ -19,12 +19,15 @@
             <span class="text-base font-medium text-gray-500">{{ $period }}</span>
             </p>
           
-            <button 
+            <!-- <button 
             class="inline-flex mt-8 w-full px-4 py-2 font-extrabold rounded-md shadow-sm text-white text-center bg-gradient-to-r from-gray-600 to-gray-400 hover:from-gray-600 hover:to-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600"
             x-data="{}" 
             x-on:click="window.livewire.emitTo('contact-modal', 'show')">
             Get Started 
-            </button>
+            </button> -->
+            <x-button class="inline-flex mt-8 w-full px-4 py-2 font-extrabold rounded-md shadow-sm text-white text-center bg-gradient-to-r from-gray-600 to-gray-400 hover:from-gray-600 hover:to-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
+            Get Started 
+            </x-button>
             
         </div>
         <div class="pt-6 pb-8 px-6 bg-yellow-600 rounded-b-lg">
