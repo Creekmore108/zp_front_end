@@ -13,7 +13,7 @@
     
         <div class="p-6">
           <h2 class="text-lg leading-6 font-bold text-gray-900">{{ $title }}</h2>
-            <p class="mt-4 text-sm text-gray-800">{{ $description }}<br>( {{ $num }} users @ {{ $per }} each)</p>
+            <p class="mt-4 text-sm text-gray-800">{{ $description }}<br>({{ $num }} users @ {{ $per }}&cent; each)</p>
             <p class="mt-8">
             <span class="text-4xl font-extrabold text-gray-600">{{ $base }}</span>
             <span class="text-base font-medium text-gray-500">{{ $period }}</span>

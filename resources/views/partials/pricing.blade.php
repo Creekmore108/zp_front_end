@@ -9,25 +9,25 @@
             
                 <!-- Start of Bronze Pricing Plan box -->
 
-                <x-pricing-block title="Bronze" description="Full functioning environment" num="1-20" per=".95&cent;" base="$10" period="/mo" />
+                <x-pricing-block title="Bronze" description="Full functioning environment" num="1-20" per=".95" base="$10" period="/mo" />
                 
                 <!-- End of Bronze Pricing Plan box -->
 
                 <!-- Start of Silver Pricing Plan Box -->
 
-                <x-pricing-block title="Silver" description="Full functioning environment" num="21-40" per=".85&cent;" base="$15" period="/mo"/>
+                <x-pricing-block title="Silver" description="Full functioning environment" num="21-40" per=".85" base="$15" period="/mo"/>
 
                 <!-- End of Silver Pricing box -->
 
                 <!-- Start of Gold Pricing Plan Box -->
 
-                <x-pricing-block title="Gold" description="Full functioning environment" num="41-60" per=".80&cent;" base="$20" period="/mo"/>
+                <x-pricing-block title="Gold" description="Full functioning environment" num="41-60" per=".80" base="$20" period="/mo"/>
 
                 <!-- end of Gold pricing box -->
 
                 <!-- Start of Platinum Pricing Plan Box -->
 
-                <x-pricing-block title="Platinum" description="Full functioning environment" num="61-80" per=".75&cent;" base="$25" period="/mo"/>
+                <x-pricing-block title="Platinum" description="Full functioning environment" num="61-80" per=".75" base="$25" period="/mo"/>
 
                 <!-- end of Platinum pricing box -->
             </div>
