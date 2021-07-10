@@ -11,16 +11,16 @@
                         </h3>
                         <ul class="mt-4 space-y-4">
                             <li>
-                            <a href="/about" class="text-base text-gray-200 hover:text-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
+                            <a href="{{ route('about') }}" class="text-base text-gray-200 hover:text-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
                                 About</a>
                             </li>
 
                             <li>
-                            <a href="/jobs" class="text-base text-gray-200 hover:text-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
+                            <a href="{{ route('jobs') }}" class="text-base text-gray-200 hover:text-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
                                 Jobs</a>
                             </li>
                             <li>
-                            <a href="/press" class="text-base text-gray-200 hover:text-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
+                            <a href="{{ route('press') }}" class="text-base text-gray-200 hover:text-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
                                 Press</a>
                             </li>
                             
@@ -38,12 +38,12 @@
                     </h3>
                     <ul class="mt-4 space-y-4">
                         <li>
-                        <a href="/privacy" class="text-base text-gray-200 hover:text-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
+                        <a href="{{ route('privacy') }}" class="text-base text-gray-200 hover:text-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
                             Privacy</a>
                         </li>
 
                         <li>
-                        <a href="/terms" class="text-base text-gray-200 hover:text-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
+                        <a href="{{ route('terms') }}" class="text-base text-gray-200 hover:text-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
                             Terms</a>
                         </li>
                     </ul>

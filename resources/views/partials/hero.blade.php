@@ -3,7 +3,7 @@
       <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div class="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
           <div class="absolute inset-0">
-            <img class="h-full w-full object-cover" src="img/background.png" alt="">
+            <img class="h-full w-full object-cover" src="{{ asset('img/background.png') }}" alt="">
             <div class="absolute inset-0 bg-gradient-to-r from-yellow-600 to-yellow-800 mix-blend-multiply opacity-90"></div>
           </div>
           <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">

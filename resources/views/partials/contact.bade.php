@@ -3,7 +3,7 @@
     <div class="relative bg-white py-16">
       <div class="lg:absolute lg:inset-0">
         <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <img class="h-56 w-full object-cover lg:absolute lg:h-full" src="img/officeWork.jpg" alt="">
+          <img class="h-56 w-full object-cover lg:absolute lg:h-full" src="{{ asset('img/officeWork.jpg') }}" alt="">
         </div>
       </div>
       <div class="relative py-5 px-4 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:py-14 lg:grid lg:grid-cols-2">
