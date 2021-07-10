@@ -9,7 +9,7 @@
       <div class="flex items-center px-2 lg:px-0 ">
         <div class="flex-shrink-0">
           <span class="inline-flex"> 
-          <a href="{{ route('home') }}"> <img class=" lg:block h-16 w-auto mr-4" src="/img/icons/logo.svg" alt="Zeitplans"></a>
+          <a href="{{ route('home') }}"> <x-icon.logo class="lg:block h-16 w-auto mr-4" /></a>
           <span class="text-white text-5xl mr-16 mt-3">Zeitplans</span></span> 
         </div>
         <div class="hidden lg:block lg:ml-6">
@@ -106,10 +106,7 @@
               <nav class="grid grid-cols-1 gap-7">
                 <a href="http://zeitplans_frontend.test?#features" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
                   <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gray-600 text-white">
-                    <!-- Heroicon name: calendar -->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path class="bg-yellow-800" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-                    </svg>
+                    <x-icon.calendar/>
                   </div>
                   <div class="ml-4 text-base font-medium text-gray-900">
                     Features
@@ -253,10 +250,9 @@
             <div>
               <div>
                 <span class="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-l from-gray-400 to-gray-600">
-                  <!-- Heroicon name: outline/inbox -->
-                  <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4" />
-                  </svg>
+                  
+                  <x-icon.calendar class="text-white"/>
+
                 </span>
               </div>
               <div class="mt-6">
@@ -310,10 +306,8 @@
             <div>
               <div>
                 <span class="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-gray-400 to-gray-600">
-                  <!-- Heroicon name: outline/sparkles -->
-                  <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                  </svg>
+                  
+                  <x-icon.sparkles class="text-white"/>
                 </span>
               </div>
               <div class="mt-6">
@@ -357,10 +351,9 @@
           <div>
             <div>
               <span class="flex items-center justify-center h-12 w-12 rounded-md bg-gray-600">
-                <!-- Heroicon name: outline/calendar -->
-                <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3M16 7V3M7 11H17M5 21H19C20.1046 21 21 20.1046 21 19V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V19C3 20.1046 3.89543 21 5 21Z" />
-                  </svg>
+
+                <x-icon.calendar class="text-white"/>
+
               </span>
             </div>
             <div class="mt-6">
@@ -374,10 +367,9 @@
           <div>
             <div>
               <span class="flex items-center justify-center h-12 w-12 rounded-md bg-gray-600">
-                <!-- Heroicon name: outline/users -->
-                <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-                </svg>
+                
+                <x-icon.users class="text-white" />
+                
               </span>
             </div>
             <div class="mt-6">
@@ -391,10 +383,9 @@
           <div>
             <div>
               <span class="flex items-center justify-center h-12 w-12 rounded-md bg-gray-600">
-                 <!-- Heroicon name: outline/clipboard list -->
-                 <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path d="M9 5H7C5.89543 5 5 5.89543 5 7V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V7C19 5.89543 18.1046 5 17 5H15M9 5C9 6.10457 9.89543 7 11 7H13C14.1046 7 15 6.10457 15 5M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5M12 12H15M12 16H15M9 12H9.01M9 16H9.01" stroke="dark-yellow-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                 
+                <x-icon.clipboard-list class="text-white" />
+                
               </span>
             </div>
             <div class="mt-6">
@@ -408,10 +399,9 @@
           <div>
             <div>
               <span class="flex items-center justify-center h-12 w-12 rounded-md bg-gray-600">
-                <!-- Heroicon name: outline/at symbol -->
-                <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path d="M16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16C14.2091 16 16 14.2091 16 12ZM16 12V13.5C16 14.8807 17.1193 16 18.5 16C19.8807 16 21 14.8807 21 13.5V12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21M16.5 19.7942C15.0801 20.614 13.5296 21.0029 12 21.0015" stroke="dark-yellow-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                 
+              <x-icon.at-symbol class="text-white" />
+                
               </span>
             </div>
             <div class="mt-6">
@@ -425,10 +415,9 @@
           <div>
             <div>
               <span class="flex items-center justify-center h-12 w-12 rounded-md bg-gray-600">
-                <!-- Heroicon name: outline/collection -->
-                <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path d="M19 11H5M19 11C20.1046 11 21 11.8954 21 13V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V13C3 11.8954 3.89543 11 5 11M19 11V9C19 7.89543 18.1046 7 17 7M5 11V9C5 7.89543 5.89543 7 7 7M7 7V5C7 3.89543 7.89543 3 9 3H15C16.1046 3 17 3.89543 17 5V7M7 7H17" stroke="dark-yellow-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                  
+              <x-icon.collection class="text-white" />
+                
               </span>
             </div>
             <div class="mt-6">
@@ -442,11 +431,9 @@
           <div>
             <div>
               <span class="flex items-center justify-center h-12 w-12 rounded-md bg-gray-600">
-              <!-- Heroicon name: outline/collection -->
-              <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path d="M11 3.05493C6.50005 3.55238 3 7.36745 3 12C3 16.9706 7.02944 21 12 21C16.6326 21 20.4476 17.5 20.9451 13H11V3.05493Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M20.4878 9H15V3.5123C17.5572 4.41613 19.5839 6.44285 20.4878 9Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                  
+              <x-icon.chart-pie class="text-white" />
+                
               </span>
             </div>
             <div class="mt-6">
@@ -460,10 +447,9 @@
           <div>
             <div>
               <span class="flex items-center justify-center h-12 w-12 rounded-md bg-gray-600">
-                <!-- Heroicon name: outline/chat -->
-                <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path d="M8 12H8.01M12 12H12.01M16 12H16.01M21 12C21 16.4183 16.9706 20 12 20C10.4607 20 9.01172 19.6565 7.74467 19.0511L3 20L4.39499 16.28C3.51156 15.0423 3 13.5743 3 12C3 7.58172 7.02944 4 12 4C16.9706 4 21 7.58172 21 12Z" stroke="dark-yellow-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                   
+              <x-icon.chat class="text-white" />
+                
               </span>
             </div>
             <div class="mt-6">
@@ -478,11 +464,13 @@
           <div>
             <div>
               <span class="flex items-center justify-center h-12 w-12 rounded-md bg-gray-600">
-                <!-- Heroicon name: outline/user-group -->
-                <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+
+                <x-icon.cog class="text-white"/>
+                <!-- Heroicon name: outline/cog -->
+                <!-- <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path d="M10.3246 4.31731C10.751 2.5609 13.249 2.5609 13.6754 4.31731C13.9508 5.45193 15.2507 5.99038 16.2478 5.38285C17.7913 4.44239 19.5576 6.2087 18.6172 7.75218C18.0096 8.74925 18.5481 10.0492 19.6827 10.3246C21.4391 10.751 21.4391 13.249 19.6827 13.6754C18.5481 13.9508 18.0096 15.2507 18.6172 16.2478C19.5576 17.7913 17.7913 19.5576 16.2478 18.6172C15.2507 18.0096 13.9508 18.5481 13.6754 19.6827C13.249 21.4391 10.751 21.4391 10.3246 19.6827C10.0492 18.5481 8.74926 18.0096 7.75219 18.6172C6.2087 19.5576 4.44239 17.7913 5.38285 16.2478C5.99038 15.2507 5.45193 13.9508 4.31731 13.6754C2.5609 13.249 2.5609 10.751 4.31731 10.3246C5.45193 10.0492 5.99037 8.74926 5.38285 7.75218C4.44239 6.2087 6.2087 4.44239 7.75219 5.38285C8.74926 5.99037 10.0492 5.45193 10.3246 4.31731Z" stroke="dark-yellow-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                </svg> -->
               </span>
             </div>
             <div class="mt-6">
@@ -521,9 +509,9 @@
                 <div>
                   <div class="text-white font-bold cursor-pointer inline-flex" @mouseover="open = true" @mouseleave="open = false" >
                     <div x-data="{ open: true }" class="mr-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                      </svg>
+
+                    <x-icon.chevron-right />
+                      
                     </div>
                   Which plan is right for my organization?
                   </div>
@@ -537,9 +525,9 @@
                 <div>
                   <div class="text-white font-bold cursor-pointer inline-flex" @mouseover="open = true" @mouseleave="open = false" >
                     <div x-data="{ open: true }" class="mr-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                      </svg>
+                      
+                    <x-icon.chevron-right />
+
                     </div>
                     Can I access Zeitplans on my smartphone?
                   </div>
@@ -553,9 +541,9 @@
                 <div>
                   <div class="text-white font-bold cursor-pointer inline-flex" @mouseover="open = true" @mouseleave="open = false" >
                     <div x-data="{ open: true }" class="mr-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                      </svg>
+                      
+                    <x-icon.chevron-right />
+
                     </div>
                     What if I change my mind?
                   </div>
@@ -569,9 +557,9 @@
                 <div>
                   <div class="text-white font-bold cursor-pointer inline-flex" @mouseover="open = true" @mouseleave="open = false" >
                     <div x-data="{ open: true }" class="mr-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                      </svg>
+                      
+                    <x-icon.chevron-right />
+
                     </div>
                   What will the URL to my account look like?
                   </div>
@@ -586,9 +574,9 @@
                 <div>
                   <div class="text-white font-bold cursor-pointer inline-flex" @mouseover="open = true" @mouseleave="open = false" >
                     <div x-data="{ open: true }" class="mr-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                      </svg>
+                      
+                    <x-icon.chevron-right />
+
                     </div>
                     How secure is Zeitplans.com?
                   </div>
@@ -602,9 +590,9 @@
                 <div>
                   <div class="text-white font-bold cursor-pointer inline-flex" @mouseover="open = true" @mouseleave="open = false" >
                     <div x-data="{ open: true }" class="mr-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                      </svg>
+                      
+                    <x-icon.chevron-right />
+                    
                     </div>
                     What payment types do you accept?
                   </div>
@@ -654,59 +642,58 @@
           <ul class="mt-6 space-y-4">
 
             <li class="flex space-x-3">
+              
               <!-- Heroicon name: solid/check -->
-              <svg class="flex-shrink-0 h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <x-icon.check class="text-gray-600"/>
+
               <span class="text-sm text-gray-800">Resource Scheduling</span>
             </li>
             <li class="flex space-x-3">
+
               <!-- Heroicon name: solid/check -->
-              <svg class="flex-shrink-0 h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <x-icon.check class="text-gray-600"/>
+
               <span class="text-sm text-gray-800">Wait Lists</span>
             </li>
             <li class="flex space-x-3">
+
               <!-- Heroicon name: solid/check -->
-              <svg class="flex-shrink-0 h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <x-icon.check class="text-gray-600"/>
+
               <span class="text-sm text-gray-800">Member Accounts</span>
             </li>
             <li class="flex space-x-3">
+
               <!-- Heroicon name: solid/check -->
-              <svg class="flex-shrink-0 h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <x-icon.check class="text-gray-600"/>
+
               <span class="text-sm text-gray-800">Class Posting</span>
             </li>
             <li class="flex space-x-3">
               <!-- Heroicon name: solid/check -->
-              <svg class="flex-shrink-0 h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <x-icon.check class="text-gray-600"/>
+
               <span class="text-sm text-gray-800">Reporting</span>
             </li>
             <li class="flex space-x-3">
+
               <!-- Heroicon name: solid/check -->
-              <svg class="flex-shrink-0 h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <x-icon.check class="text-gray-600"/>
+
               <span class="text-sm text-gray-800">Custom Sub-domain</span>
             </li>
             <li class="flex space-x-3">
+
               <!-- Heroicon name: solid/check -->
-              <svg class="flex-shrink-0 h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <x-icon.check class="text-gray-600"/>
+
               <span class="text-sm text-gray-800">Logs</span>
             </li>
             <li class="flex space-x-3">
+
               <!-- Heroicon name: solid/check -->
-              <svg class="flex-shrink-0 h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <x-icon.check class="text-gray-600"/>
+
               <span class="text-sm text-gray-800">Internal Chat</span>
             </li>
           </ul>
@@ -737,58 +724,42 @@
 
             <li class="flex space-x-3">
               <!-- Heroicon name: solid/check -->
-              <svg class="flex-shrink-0 h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <x-icon.check class="text-gray-600"/>
               <span class="text-sm text-gray-800">Resource Scheduling</span>
             </li>
             <li class="flex space-x-3">
               <!-- Heroicon name: solid/check -->
-              <svg class="flex-shrink-0 h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <x-icon.check class="text-gray-600"/>
               <span class="text-sm text-gray-800">Wait Lists</span>
             </li>
             <li class="flex space-x-3">
               <!-- Heroicon name: solid/check -->
-              <svg class="flex-shrink-0 h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <x-icon.check class="text-gray-600"/>
               <span class="text-sm text-gray-800">Member Accounts</span>
             </li>
             <li class="flex space-x-3">
               <!-- Heroicon name: solid/check -->
-              <svg class="flex-shrink-0 h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <x-icon.check class="text-gray-600"/>
               <span class="text-sm text-gray-800">Class Posting</span>
             </li>
             <li class="flex space-x-3">
               <!-- Heroicon name: solid/check -->
-              <svg class="flex-shrink-0 h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <x-icon.check class="text-gray-600"/>
               <span class="text-sm text-gray-800">Reporting</span>
             </li>
             <li class="flex space-x-3">
               <!-- Heroicon name: solid/check -->
-              <svg class="flex-shrink-0 h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <x-icon.check class="text-gray-600"/>
               <span class="text-sm text-gray-800">Custom Sub-domain</span>
             </li>
             <li class="flex space-x-3">
               <!-- Heroicon name: solid/check -->
-              <svg class="flex-shrink-0 h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <x-icon.check class="text-gray-600"/>
               <span class="text-sm text-gray-800">Logs</span>
             </li>
             <li class="flex space-x-3">
               <!-- Heroicon name: solid/check -->
-              <svg class="flex-shrink-0 h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <x-icon.check class="text-gray-600"/>
               <span class="text-sm text-gray-800">Internal Chat</span>
             </li>
           </ul>
@@ -819,58 +790,46 @@
 
             <li class="flex space-x-3">
               <!-- Heroicon name: solid/check -->
-              <svg class="flex-shrink-0 h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <x-icon.check class="text-gray-600"/>
               <span class="text-sm text-gray-800">Resource Scheduling</span>
             </li>
             <li class="flex space-x-3">
               <!-- Heroicon name: solid/check -->
-              <svg class="flex-shrink-0 h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <x-icon.check class="text-gray-600"/>
               <span class="text-sm text-gray-800">Wait Lists</span>
             </li>
             <li class="flex space-x-3">
               <!-- Heroicon name: solid/check -->
-              <svg class="flex-shrink-0 h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <x-icon.check class="text-gray-600"/>
               <span class="text-sm text-gray-800">Member Accounts</span>
             </li>
             <li class="flex space-x-3">
               <!-- Heroicon name: solid/check -->
-              <svg class="flex-shrink-0 h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <x-icon.check class="text-gray-600"/>
               <span class="text-sm text-gray-800">Class Posting</span>
             </li>
             <li class="flex space-x-3">
               <!-- Heroicon name: solid/check -->
-              <svg class="flex-shrink-0 h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <x-icon.check class="text-gray-600"/>
+
               <span class="text-sm text-gray-800">Reporting</span>
             </li>
             <li class="flex space-x-3">
               <!-- Heroicon name: solid/check -->
-              <svg class="flex-shrink-0 h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <x-icon.check class="text-gray-600"/>
+
               <span class="text-sm text-gray-800">Custom Sub-domain</span>
             </li>
             <li class="flex space-x-3">
               <!-- Heroicon name: solid/check -->
-              <svg class="flex-shrink-0 h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <x-icon.check class="text-gray-600"/>
+              
               <span class="text-sm text-gray-800">Logs</span>
             </li>
             <li class="flex space-x-3">
               <!-- Heroicon name: solid/check -->
-              <svg class="flex-shrink-0 h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <x-icon.check class="text-gray-600"/>
+
               <span class="text-sm text-gray-800">Internal Chat</span>
             </li>
           </ul>
@@ -901,59 +860,59 @@
           <ul class="mt-6 space-y-4">
 
             <li class="flex space-x-3">
+
               <!-- Heroicon name: solid/check -->
-              <svg class="flex-shrink-0 h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <x-icon.check class="text-gray-600"/>
+
               <span class="text-sm text-gray-800">Resource Scheduling</span>
             </li>
             <li class="flex space-x-3">
+
               <!-- Heroicon name: solid/check -->
-              <svg class="flex-shrink-0 h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <x-icon.check class="text-gray-600"/>
+
               <span class="text-sm text-gray-800">Wait Lists</span>
             </li>
             <li class="flex space-x-3">
+
               <!-- Heroicon name: solid/check -->
-              <svg class="flex-shrink-0 h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <x-icon.check class="text-gray-600"/>
+
               <span class="text-sm text-gray-800">Member Accounts</span>
             </li>
             <li class="flex space-x-3">
+
               <!-- Heroicon name: solid/check -->
-              <svg class="flex-shrink-0 h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <x-icon.check class="text-gray-600"/>
+
               <span class="text-sm text-gray-800">Class Posting</span>
             </li>
             <li class="flex space-x-3">
+
               <!-- Heroicon name: solid/check -->
-              <svg class="flex-shrink-0 h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <x-icon.check class="text-gray-600"/>
+
               <span class="text-sm text-gray-800">Reporting</span>
             </li>
             <li class="flex space-x-3">
+
               <!-- Heroicon name: solid/check -->
-              <svg class="flex-shrink-0 h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <x-icon.check class="text-gray-600"/>
+
               <span class="text-sm text-gray-800">Custom Sub-domain</span>
             </li>
             <li class="flex space-x-3">
+              
               <!-- Heroicon name: solid/check -->
-              <svg class="flex-shrink-0 h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <x-icon.check class="text-gray-600"/>
+
               <span class="text-sm text-gray-800">Logs</span>
             </li>
             <li class="flex space-x-3">
+
               <!-- Heroicon name: solid/check -->
-              <svg class="flex-shrink-0 h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <x-icon.check class="text-gray-600"/>
+              
               <span class="text-sm text-gray-800">Internal Chat</span>
             </li>
           </ul>
