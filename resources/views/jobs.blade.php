@@ -20,7 +20,7 @@
               <input type="text" name="jobs" id="jobs" class="focus:ring-gray-600 focus:border-gray-600 block w-full rounded rounded-l-md pl-10 sm:text-sm border-gray-300" placeholder="Software Developer">
             </div>
             <!-- <button x-data="{}" x-on:click="window.livewire.emitTo('job-search-modal', 'show')" class="-ml-px relative inline-flex items-center space-x-2 px-4 py-2 border border-gray-300 text-sm font-medium rounded-r-md text-gray-700 bg-gray-50 hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-coffee focus:border-coffee"> -->
-            <button x-data="{}" x-on:click="#" class="-ml-px relative inline-flex items-center space-x-2 px-4 py-2 border border-gray-300 text-sm font-medium rounded-r-md text-gray-700 bg-gray-50 hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-yellow-600 focus:border-yellow-600">
+            <button id="jobs" class="-ml-px relative inline-flex items-center space-x-2 px-4 py-2 border border-gray-300 text-sm font-medium rounded-r-md text-gray-700 bg-gray-50 hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-yellow-600 focus:border-yellow-600">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
@@ -36,6 +36,6 @@
       <img class="absolute inset-0 w-full h-full object-cover" src="img/JobHunt.jpg" alt="">
     </div>
   </jobs>
-
+    
 @include('partials.footer')
 @endsection

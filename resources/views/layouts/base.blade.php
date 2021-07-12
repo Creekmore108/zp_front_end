@@ -27,6 +27,9 @@
         <!-- Scripts -->
         <script src="{{ url(mix('js/app.js')) }}" defer></script>
 
+        <!-- Sweet Alert -->
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
         <!-- Alpine js CDN -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine-ie11.min.js" integrity="sha512-Atu8sttM7mNNMon28+GHxLdz4Xo2APm1WVHwiLW9gW4bmHpHc/E2IbXrj98SmefTmbqbUTOztKl5PDPiu0LD/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
@@ -48,5 +51,54 @@
         @yield('body')
 
         @livewireScripts
+        
+        <script>
+                document.querySelector(".one").addEventListener('click', function(){ 
+                Swal.fire({title: 'We are still in development',text: 'subscribe to our email list to be notified when we are in production',confirmButtonColor: '#D97706',
+                        showClass: {popup: 'animate__animated animate__fadeInDown'},hideClass: {popup: 'animate__animated animate__fadeOutUp'}})})
+                
+                document.querySelector(".two").addEventListener('click', function(){ 
+                Swal.fire({title: 'We are still in development',text: 'subscribe to our email list to be notified when we are in production',confirmButtonColor: '#D97706',
+                        showClass: {popup: 'animate__animated animate__fadeInDown'},hideClass: {popup: 'animate__animated animate__fadeOutUp'}})})
+
+                document.querySelector(".three").addEventListener('click', function(){ 
+                Swal.fire({title: 'We are still in development',text: 'subscribe to our email list to be notified when we are in production',confirmButtonColor: '#D97706',
+                        showClass: {popup: 'animate__animated animate__fadeInDown'},hideClass: {popup: 'animate__animated animate__fadeOutUp'}})})
+                
+                document.querySelector(".four").addEventListener('click', function(){ 
+                Swal.fire({title: 'We are still in development',text: 'subscribe to our email list to be notified when we are in production',confirmButtonColor: '#D97706',
+                        showClass: {popup: 'animate__animated animate__fadeInDown'},hideClass: {popup: 'animate__animated animate__fadeOutUp'}})})
+
+                document.querySelector(".five").addEventListener('click', function(){ 
+                Swal.fire({title: 'We are still in development',text: 'subscribe to our email list to be notified when we are in production',confirmButtonColor: '#D97706',
+                        showClass: {popup: 'animate__animated animate__fadeInDown'},hideClass: {popup: 'animate__animated animate__fadeOutUp'}})})
+                
+                document.querySelector(".six").addEventListener('click', function(){ 
+                Swal.fire({title: 'We are still in development',text: 'subscribe to our email list to be notified when we are in production',confirmButtonColor: '#D97706',
+                        showClass: {popup: 'animate__animated animate__fadeInDown'},hideClass: {popup: 'animate__animated animate__fadeOutUp'}})})
+                
+                document.querySelector(".seven").addEventListener('click', function(){ 
+                Swal.fire({title: 'We are still in development',text: 'subscribe to our email list to be notified when we are in production',confirmButtonColor: '#D97706',
+                        showClass: {popup: 'animate__animated animate__fadeInDown'},hideClass: {popup: 'animate__animated animate__fadeOutUp'}})})
+                
+                document.querySelector(".eight").addEventListener('click', function(){ 
+                Swal.fire({title: 'We are still in development',text: 'subscribe to our email list to be notified when we are in production',confirmButtonColor: '#D97706',
+                        showClass: {popup: 'animate__animated animate__fadeInDown'},hideClass: {popup: 'animate__animated animate__fadeOutUp'}})})
+                
+                document.querySelector(".nine").addEventListener('click', function(){ 
+                Swal.fire({title: 'We are still in development',text: 'subscribe to our email list to be notified when we are in production',confirmButtonColor: '#D97706',
+                        showClass: {popup: 'animate__animated animate__fadeInDown'},hideClass: {popup: 'animate__animated animate__fadeOutUp'}})})
+                
+                document.querySelector(".ten").addEventListener('click', function(){ 
+                Swal.fire({title: 'We are still in development',text: 'subscribe to our email list to be notified when we are in production',confirmButtonColor: '#D97706',
+                        showClass: {popup: 'animate__animated animate__fadeInDown'},hideClass: {popup: 'animate__animated animate__fadeOutUp'}})})
+                
+                document.querySelector(".eleven").addEventListener('click', function(){ 
+                Swal.fire({title: 'We are still in development',text: 'subscribe to our email list to be notified when we are in production',confirmButtonColor: '#D97706',
+                        showClass: {popup: 'animate__animated animate__fadeInDown'},hideClass: {popup: 'animate__animated animate__fadeOutUp'}})})
+            
+
+        
+        </script>
     </body>
 </html>

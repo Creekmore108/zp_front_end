@@ -10,7 +10,7 @@
   </div>
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-cols-2 xl:grid-flow-col-dense xl:gap-x-8 ">
         <div class="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24">
-          <p class="mt-5 text-4xl font-extrabold text-white">Frequently Asked Questions</p>
+          <p class="text-4xl mt-3 font-extrabold text-white">Frequently Asked Questions</p>
           <p class="text-lg mt-7 text-gray-300">If you do not find the answers to your questions listed below please feel free to contact us.</p>
           <div class="mt-10 flex-col mb-10" >
     

@@ -1,19 +1,19 @@
 <nav  class=" border-b border-gray-900 rounded-b-2xl bg-gray-600 fixed inset-x-0 top-0 h-16 z-50">
-  <div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
+  <div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8 mt-1">
     <div x-data="{ isOpen: false }" class="relative flex items-center justify-between h-16">
       <div class="flex items-center px-2 lg:px-0 ">
         <div class="flex-shrink-0">
           <span class="inline-flex"> 
           <a href="{{ route('home') }}"> <x-icon.logo class="lg:block h-16 w-auto mr-4" /></a>
-          <span class="text-white text-5xl mr-16 mt-3">Zeitplans</span></span> 
+          <span class="text-white text-5xl mr-16 mt-2">Zeitplans</span></span> 
         </div>
-        <div class="hidden lg:block lg:ml-6">
-          <div class="flex space-x-4">
+        <div class="hidden lg:block lg:ml-6 mt-0">
+          <div class="flex space-x-4 mt-0">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <a href="/?#features" class="text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">Features</a>
             <a href="/?#faq" class="text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">FAQ</a>
             <a href="/?#pricing" class="text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">Pricing</a>
-            <a x-data="{}" x-on:click="window.livewire.emitTo('contact-modal', 'show')" class="text-gray-300 cursor-pointer hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">Live Demo</a>
+            <a class="one text-gray-300 cursor-pointer hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">Live Demo</a>
             <a href="/?#contact" class="text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">Contact</a>
           </div>
         </div>

@@ -106,10 +106,8 @@
     
     <!-- CTA Section -->
     @include('partials.cta')
-
 </div>
-
     <!-- footer -->
-    @include('partials.footer')      
-
+    @include('partials.footer')  
+      
 @endsection
