@@ -63,11 +63,11 @@
 
                         <li>
                         <a href="/?#faq" class="text-base text-gray-200 hover:text-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
-                            Fequently Asked Questions</a>
+                            Frequently Asked Questions</a>
                         </li>
 
                         <li>
-                        <a href="/?#" class="text-base text-gray-200 hover:text-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
+                        <a href="/?#" class="eight text-base text-gray-200 hover:text-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
                             Live Demo</a>
                         </li>
 

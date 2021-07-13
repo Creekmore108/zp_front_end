@@ -3,7 +3,7 @@
         <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
             <div class="sm:flex sm:flex-col sm:align-center">
             <h1 class="text-5xl mt-8 font-extrabold text-gray-900 sm:text-center">Pricing Plans</h1>
-            <p class="mt-5 text-xl text-gray-500 sm:text-center">Signup now and get your orginazation on track and manage all your resources in one place.</p>
+            <p class="mt-5 text-xl text-gray-500 sm:text-center">Signup now and get your organization on track and manage all your resources in one place.</p>
             </div>
             <div class="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-4">
                 <!--  Bronze Pricing Plan box -->

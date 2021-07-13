@@ -16,8 +16,8 @@
                   Stay on top of your resources
                 </h2>
                 <p class="mt-4 text-lg text-gray-500">
-                  A simple calendar view to view your resource bookings. Calendar view has muliple view options to view your resources by the Day, Week, Month.
-                  All interfaces are mobile ready so your memnbers can access and reserve resources from anywhere at anytime of day.
+                  A simple calendar view to view your resource bookings. Calendar view has multiple view options to view your resources by the Day, Week, Month.
+                  All interfaces are mobile ready so your members can access and reserve resources from anywhere at anytime of day.
                 </p>
                 <div class="mt-6">
                 <x-button class="four inline-flex items-center px-4 py-3 border border-transparent rounded-md font-semibold tracking-widest text-black bg-gradient-to-r from-yellow-600 to-yellow-800 hover:text-white hover:from-yellow-800 hover:to-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600 focus:outline-none focus:border-yellow-800 focus:ring ring-yellow-800 disabled:opacity-25 transition ease-in-out duration-150">Get Started</x-button>

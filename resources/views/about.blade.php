@@ -38,10 +38,10 @@
             With over twenty five years of fortune 500 consulting experience we have built an industry standard application to empower organizations by helping them manage their resources.
           </p>
           <p class="text-base leading-7">
-            Zeitplan is German for schedule and since this application is primarly to be used for scheduling it was an easy fit for the name and the domain name was available.
+            Zeitplan is German for schedule and since this application is primarily to be used for scheduling it was an easy fit for the name and the domain name was available.
           </p>
           <p class="text-base leading-7">
-            Zeitplans is a small company located in Boulder Colorado with only a couple team memnber at the moment but as we plan our growth over the next five years we will be hiring accordingly.
+            Zeitplans is a small company located in Boulder Colorado with only a couple team members at the moment but as we plan our growth over the next five years we will be hiring accordingly.
           </p>
         </div>
       </div>

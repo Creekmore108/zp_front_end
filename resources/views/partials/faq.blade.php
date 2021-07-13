@@ -41,7 +41,7 @@
                     Can I access Zeitplans on my smartphone?
                   </div>
                   <div  x-show="open"  class="col-span-full text-gray-100 font-normal transition ease-in-out duration-1000 pl-7">
-                    We understand that each organization is unique, requiring specific features to support its members and reporting needs. Above you can see the features included in the different plans to support your needs.
+                  Yes, all functionality is mobile friendly.
                   </div>
                 </div>
             </div> 
@@ -57,7 +57,7 @@
                     What if I change my mind?
                   </div>
                   <div  x-show="open"  class="col-span-full text-gray-100 font-normal transition ease-in-out duration-1000 pl-7">
-                    We understand that each organization is unique, requiring specific features to support its members and reporting needs. Above you can see the features included in the different plans to support your needs.
+                  If you’ve paid for a yearly subscription in the last 30-days, and need to cancel your account, you are entitled to a prorated refund. We will automatically refund you the remaining balance from your original purchase. Simply cancel the account from the Admin section, and your account will be automatically refunded. If you have any questions, you can always reach out to support@Zeitplans.com
                   </div>
                 </div>
             </div> 
