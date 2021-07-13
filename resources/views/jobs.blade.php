@@ -39,8 +39,8 @@
   <script>
     document.querySelector(".jobs").addEventListener('click', function(){ 
                 Swal.fire({
-                    title: 'There currently now openings',
-                    text: 'Check back with us soon, we are growing',
+                    title: 'There currently no openings',
+                    text: 'Check back with us soon, as we are growing',
                     confirmButtonColor: '#D97706',
                         showClass: {
                             popup: 'animate__animated animate__fadeInDown'},
