@@ -10,6 +10,7 @@ use App\Http\Livewire\Auth\Register;
 use App\Http\Livewire\Auth\Verify;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EmailListController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,6 +31,7 @@ Route::view('/terms', 'terms')->name('terms');
 Route::view('/privacy', 'privacy')->name('privacy');
 
 Route::post('/emailList', [EmailListController::class, 'store'])->name('emailList');
+Route::post('/contact', [ContactController::class, 'store'])->name('contact');
 
 
 
