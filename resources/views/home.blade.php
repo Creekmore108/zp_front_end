@@ -108,6 +108,7 @@
     @include('partials.cta')
 </div>
     <!-- footer -->
-    @include('partials.footer')  
-      
+    @include('partials.footer') 
+    @include('sweetalert::alert') 
+    
 @endsection

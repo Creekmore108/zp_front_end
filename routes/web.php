@@ -9,6 +9,7 @@ use App\Http\Livewire\Auth\Passwords\Reset;
 use App\Http\Livewire\Auth\Register;
 use App\Http\Livewire\Auth\Verify;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EmailListController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +28,9 @@ Route::view('/jobs', 'jobs')->name('jobs');
 Route::view('/press', 'press')->name('press');
 Route::view('/terms', 'terms')->name('terms');
 Route::view('/privacy', 'privacy')->name('privacy');
+
+Route::post('/emailList', [EmailListController::class, 'store'])->name('emailList');
+
 
 
 Route::middleware('guest')->group(function () {
