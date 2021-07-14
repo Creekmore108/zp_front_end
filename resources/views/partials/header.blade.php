@@ -17,71 +17,62 @@
             <a href="/?#contact" class="text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">Contact</a>
           </div>
         </div>
-        <div class="absolute top-0 right-0 mt-4 mr-4">
-            @if (Route::has('login'))
-                <div class="space-x-4">
-                    @auth
-                        <a
-                            href="{{ route('logout') }}"
-                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
-                            class="font-medium text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600 transition ease-in-out duration-150"
-                        >
-                            Log out
-                        </a>
 
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                            @csrf
-                        </form>
-                    @else
-                        <a href="{{ route('login') }}" class="font-medium text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600 focus:underline transition ease-in-out duration-150">Log in</a>
+          <div class="absolute top-0 right-0 mt-4 mr-2 md:mr-10 sm:mr-16">
+              @if (Route::has('login'))
+                  <div class="space-x-4 hidden lg:block">
+                      @auth
+                          <a
+                              href="{{ route('logout') }}"
+                              onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                              class="font-medium text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600 transition ease-in-out duration-150"
+                          >
+                              Log out
+                          </a>
 
-                        <!-- @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="font-medium text-gray-300 hover:text-yellow-600 px-3 py-2 rounded-md text-lg focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600 focus:underline transition ease-in-out duration-150">Register</a>
-                        @endif -->
-                    @endauth
-                </div>
-            @endif
-        </div>
+                          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                              @csrf
+                          </form>
+                      @else
+                          <a href="{{ route('login') }}" class="font-medium text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600 focus:underline transition ease-in-out duration-150">Login</a>
+
+                          <!-- @if (Route::has('register'))
+                              <a href="{{ route('register') }}" class="font-medium text-gray-300 hover:text-yellow-600 px-3 py-2 rounded-md text-lg focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600 focus:underline transition ease-in-out duration-150">Register</a>
+                          @endif -->
+                      @endauth
+                  </div>
+              @endif
+          </div>
       </div>
-    
+
       <div class="flex lg:hidden">
-        <!-- Mobile menu button -->
-        <button 
-            type="button" 
-            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" 
-            @click="isOpen = !isOpen"
-            > 
-          <span class="sr-only">Open main menu</span>
-          <!--
-            Icon when menu is closed.
-
-            Heroicon name: outline/menu
-
-            Menu open: "hidden", Menu closed: "block"
-          -->
-          <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-          <!--
-            Icon when menu is open.
-
-            Heroicon name: outline/x
-
-            Menu open: "block", Menu closed: "hidden"
-          -->
-          <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
+            <!-- Mobile menu button -->
+            <button type="button" 
+                class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" 
+                @click="isOpen = !isOpen"> 
+                <span class="sr-only">Open main menu</span>
+                <!-- Icon when menu is closed.
+                      Heroicon name: outline/menu
+                      Menu open: "hidden", Menu closed: "block"-->
+                <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <!--Icon when menu is open.
+                    Heroicon name: outline/x
+                    Menu open: "block", Menu closed: "hidden"-->
+                <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
       </div>
-      
+
       <div class="relative bg-white">
       <div  x-show="isOpen" class="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
         <div  class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-yellow-600">
           <div class="pt- pb-6 px-5">
             <div class="flex items-center justify-between">
               <div>
-                <!-- <img class="w-auto h-10" src="http://zeitplans_frontend.test/img/icons/logo.svg" alt="Zeitplans"> -->
+                <img class="w-auto h-10" src="{{ asset('img/icons/logo.svg') }}" alt="Zeitplans">
               </div>
               <div>
                 <button 
@@ -96,19 +87,22 @@
                 </button>
               </div>
             </div>
-            
-            <div class="mt-6">
-              <nav class="grid grid-cols-1 gap-7">
-                <a href="http://zeitplans_frontend.test?#features" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
+
+        <div class="mt-auto">
+              <nav class="grid grid-cols-1 gap-2">
+                <a href="{{ route('home', '#features') }}" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
                   <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gray-600 text-white">
-                    <x-icon.calendar/>
+                    <!-- Heroicon name: calendar -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path class="bg-yellow-800" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                    </svg>
                   </div>
                   <div class="ml-4 text-base font-medium text-gray-900">
                     Features
                   </div>
                 </a>
 
-                <a href="http://zeitplans_frontend.test?#faq" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
+                <a href="{{ route('home', '#faq') }}" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
                   <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gray-600 text-white">
                     <!-- Heroicon name: Question mark -->
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -120,7 +114,7 @@
                   </div>
                 </a>
 
-                <a href="http://zeitplans_frontend.test?#pricing" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
+                <a href="{{ route('home', '#pricing') }}" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
                   <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gray-600 text-white">
                     <!-- Heroicon name: currency-dollar -->
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -145,7 +139,7 @@
                   </div>
                 </a>
 
-                <a href="http://zeitplans_frontend.test?#contact" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
+                <a href="{{ route('home', '#contact') }}" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
                   <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gray-600 text-white">
                     <!-- Heroicon at symbol -->
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -162,10 +156,8 @@
           </div>
         </div>
       </div>
-      </div>
     </div>
-
-
     </div>
+  </div>
   </div>
 </nav>

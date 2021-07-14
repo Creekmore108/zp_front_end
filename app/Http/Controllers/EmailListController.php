@@ -4,8 +4,6 @@ namespace App\Http\Controllers;
 
 use RealRashid\SweetAlert\Facades\Alert;
 
-
-
 use App\Models\EmailList;
 
 class EmailListController extends Controller
