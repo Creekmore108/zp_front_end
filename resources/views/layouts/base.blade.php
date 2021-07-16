@@ -38,7 +38,19 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
+<<<<<<< HEAD
 
+=======
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-VLH0NXKC0P"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-VLH0NXKC0P');
+        </script>
+>>>>>>> parent of e46a9e0... changed out Mobile menu
     </head>
 
     <body class="font-sans antialiased">

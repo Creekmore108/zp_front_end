@@ -2,7 +2,7 @@
 
 @section('content')
  
-<!-- <div class="py-16"> -->
+<div class="py-16">
   <!--  header -->
 
   @include('partials.header')
@@ -108,7 +108,7 @@
     
     <!-- CTA Section -->
     @include('partials.cta')
-<!-- </div> -->
+</div>
     <!-- footer -->
     @include('partials.footer') 
     @include('sweetalert::alert') 
