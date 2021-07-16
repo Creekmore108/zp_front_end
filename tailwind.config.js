@@ -1,9 +1,6 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-    purge: [
-        '.layouts/**/*.php'
-    ],
     theme: {
         colors:{
             coffee: '#6F4E37',
