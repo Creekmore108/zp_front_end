@@ -38,27 +38,14 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-<<<<<<< HEAD
 
-=======
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-VLH0NXKC0P"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-VLH0NXKC0P');
-        </script>
->>>>>>> parent of e46a9e0... changed out Mobile menu
     </head>
 
     <body class="font-sans antialiased">
         @yield('body')
 
         @livewireScripts
-       
-        
+        <!-- Temporary solution for Sweet ALerts during development -->
         <script>
                 document.querySelector(".one").addEventListener('click', function(){ 
                 Swal.fire({title: 'We are still in development',text: 'subscribe to our email list to be notified when we are in production',confirmButtonColor: '#D97706',
@@ -98,7 +85,11 @@
                 
                 document.querySelector(".ten").addEventListener('click', function(){ 
                 Swal.fire({title: 'We are still in development',text: 'subscribe to our email list to be notified when we are in production',confirmButtonColor: '#D97706',
-                        showClass: {popup: 'animate__animated animate__fadeInDown'},hideClass: {popup: 'animate__animated animate__fadeOutUp'}})}
+                        showClass: {popup: 'animate__animated animate__fadeInDown'},hideClass: {popup: 'animate__animated animate__fadeOutUp'}})})
+                
+                
+            
+
         
         </script>
        
