@@ -2,10 +2,8 @@
 
 @section('content')
  
-<div class="py-16">
-  <!--  header -->
-
-  @include('partials.header')
+@include('partials.header')
+<div class="py-20">
             
   <!-- Hero section -->
     @include('partials.hero')

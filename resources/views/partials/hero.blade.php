@@ -1,4 +1,4 @@
-  <div class="relative mt-0">
+  <div class="relative">
     <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-b from-gray-600"></div>
       <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div class="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
