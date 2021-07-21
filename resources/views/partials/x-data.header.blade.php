@@ -1,7 +1,7 @@
 <div x-data="{ open: false }" class="fixed w-full z-20 bg-gray-600 rounded-b-lg">
   <div  class="max-w-7xl mx-auto px-4 sm:px-6">
     <div class="flex justify-between items-center border-b-0 border-gray-100 py-4 md:justify-start md:space-x-10">
-      <div class="flex ml-9 justify-start lg:w-0 lg:flex-1 items-center">
+      <div class="flex ml-9 justify-start lg:w-0 lg:flex-1">
         <a href="{{ route('home') }}">
           <x-icon.logo class="h-12 w-auto"/> </a> 
           <div class="text-white text-4xl mr-16 ml-3">Zeitplans</div>
@@ -21,11 +21,11 @@
         </button>
       </div>
 
-      <nav class="hidden md:flex space-x-7">
-        <a href="{{ route('home') }}/?#features" class="text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
+      <nav class="hidden md:flex space-x-10">
+        <a href="{{ route('jobs') }}" class="text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
           Features
         </a>
-        <a href="{{ route('home') }}/?#faq"  class="text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
+        <a href="{{ route('home') }}/?##faq"  class="text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
           FAQ
         </a>
         <a href="/?#pricing"class="text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
@@ -76,35 +76,35 @@
         </div>
         <div class="mt-6">
           <nav class="grid gap-y-8">
-            <a href="{{ route('home') }}/?#features" x-on:click="open = ! open"  class="-m-3 p-3 flex items-center text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
+            <a href="{{ route('jobs') }}"  id="features" class="-m-3 p-3 flex items-center text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
               <x-icon.clipboard-list/>
               <span class="ml-3 text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
                 Features
               </span>
             </a>
 
-            <a href="{{ route('home') }}/?#faq" x-on:click="open = ! open" class="-m-3 p-3 flex items-center text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
+            <a href="{{ route('home') }}/?##faq" id="faq"  class="-m-3 p-3 flex items-center text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
               <x-icon.question-mark/>
               <span class="ml-3 text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
                 FAQ
               </span>
             </a>
 
-            <a href="/?#pricing"  x-on:click="open = ! open" class="-m-3 p-3 flex items-center text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
+            <a href="/?#pricing" id="pricing" class="-m-3 p-3 flex items-center text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
               <x-icon.currency-dollar/>
               <span class="ml-3 text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
                 Pricing
               </span>
             </a>
 
-            <a href="/"  class="ten -m-3 p-3 flex items-center text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
+            <a href="/" id="pricing" class="ten -m-3 p-3 flex items-center text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
               <x-icon.currency-dollar/>
               <span class="ml-3 text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
                 Live Demo
               </span>
             </a>
 
-            <a href="/?#contact"  x-on:click="open = ! open" class="-m-3 p-3 flex items-center text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600" >
+            <a href="/?#contact" id="contact" class="-m-3 p-3 flex items-center text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600" >
               <x-icon.mail/>
               <span class="ml-3 text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
                 Contact
@@ -117,7 +117,7 @@
       </div>
       <div class="py-6 px-5 space-y-6">
         <div>
-          <a href="{{ route('login') }}"  class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-black bg-gradient-to-r from-yellow-600 to-yellow-800 hover:text-white hover:from-yellow-800 hover:to-yellow-600 ">
+          <a href="{{ route('login') }}" id="login" class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-black bg-gradient-to-r from-yellow-600 to-yellow-800 hover:text-white hover:from-yellow-800 hover:to-yellow-600 ">
             Login
           </a>
         </div>
