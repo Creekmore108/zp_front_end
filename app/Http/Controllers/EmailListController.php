@@ -8,6 +8,15 @@ use App\Models\EmailList;
 
 class EmailListController extends Controller
 {
+
+    public function show(){
+        // dd('inside show');
+        $emails = EmailList::all();
+
+        return view('contacts', compact('emails') );
+    }
+
+
     public function store(){
 
         request()->validate([

@@ -33,6 +33,9 @@ Route::view('/privacy', 'privacy')->name('privacy');
 Route::post('/emailList', [EmailListController::class, 'store'])->name('emailList');
 Route::post('/contact', [ContactController::class, 'store'])->name('contact');
 
+Route::get('/emails', [EmailListController::class, 'show'])->name('emails');
+Route::get('/contacts', [ContactController::class, 'show'])->name('contacts');
+
 
 
 Route::middleware('guest')->group(function () {

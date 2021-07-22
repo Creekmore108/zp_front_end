@@ -13,6 +13,15 @@ use Illuminate\Support\Facades\Validator;
 class ContactController extends Controller
 {
 
+    public function show(){
+
+        $contacts = Contact::all();
+        // dd('contacts' . $contacts);
+        return view('feedback', compact('contacts') );
+
+        
+    }
+
     public function store(Request $request){
         
 
