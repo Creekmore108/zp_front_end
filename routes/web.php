@@ -9,8 +9,8 @@ use App\Http\Livewire\Auth\Passwords\Reset;
 use App\Http\Livewire\Auth\Register;
 use App\Http\Livewire\Auth\Verify;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\EmailListController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\EmailListController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,20 +31,18 @@ Route::view('/terms', 'terms')->name('terms');
 Route::view('/privacy', 'privacy')->name('privacy');
 
 Route::post('/emailList', [EmailListController::class, 'store'])->name('emailList');
-Route::post('/contact', [ContactController::class, 'store'])->name('contact');
+Route::post('/contact', [ContactController::class, 'store'])->name('contacts');
 
 Route::get('/emails', [EmailListController::class, 'show'])->name('emails');
 Route::get('/contacts', [ContactController::class, 'show'])->name('contacts');
 
-
-
-Route::middleware('guest')->group(function () {
+// Route::middleware('guest')->group(function () {
     Route::get('login', Login::class)
         ->name('login');
 
     Route::get('register', Register::class)
         ->name('register');
-});
+// });
 
 Route::get('password/reset', Email::class)
     ->name('password.request');

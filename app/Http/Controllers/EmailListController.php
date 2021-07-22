@@ -20,10 +20,12 @@ class EmailListController extends Controller
     public function store(){
 
         request()->validate([
-            'email' => 'email|required',
+            'email' => ['email','required'],
         ]);
 
-        EmailList::create(request()->all());
+        EmailList::create([
+            'email' => request()->email,
+        ]);
         
         Alert::success('success','Thanks for subscribing, you are on the list.');
         return redirect()->route('home');

@@ -39,19 +39,30 @@
         </a>
       </nav>
 
+      @if (Route::has('login'))
       <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-      @if(auth()) 
-        <a href="{{ route('login') }}" class="text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
-          Login
-        </a>
-      @else
-        <a href="{{ route('logout') }}"  class="text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
-          Logout
-        </a>
-      @endif
-        
+        @auth
+          <a href="{{ route('contacts') }}"  class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-black bg-gradient-to-r from-yellow-600 to-yellow-800 hover:text-white hover:from-yellow-800 hover:to-yellow-600 ">
+            Contacts
+          </a>
+          <a href="{{ route('emails') }}"  class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-black bg-gradient-to-r from-yellow-600 to-yellow-800 hover:text-white hover:from-yellow-800 hover:to-yellow-600 ">
+            Emails
+          </a>
+          <a href="{{ route('logout') }}"
+            onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+            class="text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600 transition ease-in-out duration-150">
+              Log out
+          </a>
+          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+              @csrf
+          </form>
+        @else
+          <a href="{{ route('login') }}" class="text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600 transition ease-in-out duration-150">
+            Login
+          </a>
+        @endauth
       </div>
-      
+      @endif
     </div>
   </div>
 
@@ -121,12 +132,31 @@
           </nav>
         </div>
       </div>
+      @if (Route::has('login'))
       <div class="py-6 px-5 space-y-6">
         <div>
+        @auth
+          <a href="{{ route('contacts') }}"  class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-black bg-gradient-to-r from-yellow-600 to-yellow-800 hover:text-white hover:from-yellow-800 hover:to-yellow-600 ">
+            Contacts
+          </a>
+          <a href="{{ route('emails') }}"  class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-black bg-gradient-to-r from-yellow-600 to-yellow-800 hover:text-white hover:from-yellow-800 hover:to-yellow-600 ">
+            Emails
+          </a>
+          <a href="{{ route('logout') }}"
+            onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+            class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-black bg-gradient-to-r from-yellow-600 to-yellow-800 hover:text-white hover:from-yellow-800 hover:to-yellow-600 ">
+            Logout
+          </a>
+          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+              @csrf
+          </form>
+          @else
           <a href="{{ route('login') }}"  class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-black bg-gradient-to-r from-yellow-600 to-yellow-800 hover:text-white hover:from-yellow-800 hover:to-yellow-600 ">
             Login
           </a>
+        @endauth
         </div>
+      @endif
       </div>
     </div>
   </div>
