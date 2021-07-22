@@ -56,11 +56,12 @@
           <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
               @csrf
           </form>
-        @else
+        @endauth
+        @guest
           <a href="{{ route('login') }}" class="text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600 transition ease-in-out duration-150">
             Login
           </a>
-        @endauth
+        @endguest
       </div>
       <!-- @endif -->
     </div>
@@ -150,11 +151,12 @@
           <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
               @csrf
           </form>
-          @else
+        @endauth
+        @guest
           <a href="{{ route('login') }}"  class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-black bg-gradient-to-r from-yellow-600 to-yellow-800 hover:text-white hover:from-yellow-800 hover:to-yellow-600 ">
             Login
           </a>
-        @endauth
+        @endguest
         </div>
       <!-- @endif -->
       </div>
