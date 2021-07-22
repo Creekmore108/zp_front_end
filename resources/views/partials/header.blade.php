@@ -39,7 +39,7 @@
         </a>
       </nav>
 
-      @if (Route::has('login'))
+      <!-- @if (Route::has('login')) -->
       <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
         @auth
           <a href="{{ route('contacts') }}"  class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-black bg-gradient-to-r from-yellow-600 to-yellow-800 hover:text-white hover:from-yellow-800 hover:to-yellow-600 ">
@@ -62,7 +62,7 @@
           </a>
         @endauth
       </div>
-      @endif
+      <!-- @endif -->
     </div>
   </div>
 
@@ -132,7 +132,7 @@
           </nav>
         </div>
       </div>
-      @if (Route::has('login'))
+      <!-- @if (Route::has('login')) -->
       <div class="py-6 px-5 space-y-6">
         <div>
         @auth
@@ -156,7 +156,7 @@
           </a>
         @endauth
         </div>
-      @endif
+      <!-- @endif -->
       </div>
     </div>
   </div>
