@@ -11,8 +11,8 @@
         @endif
 
         <!-- Favicon -->
-		<!-- <link rel="shortcut icon" href="{{ url(asset('favicon.ico')) }}"> -->
-        <link rel="shortcut icon" href="http://zeitplans.com/img/favicon.ico">
+		<link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}">
+        
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
