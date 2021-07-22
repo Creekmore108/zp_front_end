@@ -31,6 +31,9 @@
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <!-- <script src="sweetalert2/dist/sweetalert2.all.min.js"></script> -->
 
+        <!-- Alpine CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.2.2/dist/module.cjs.min.js"></script>
+
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
     </head>
