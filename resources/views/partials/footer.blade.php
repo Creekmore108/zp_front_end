@@ -63,7 +63,7 @@
 
                         <li>
                         <a href="/?#faq" class="text-base text-gray-200 hover:text-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
-                            Frequently Asked Questions</a>
+                            FAQ</a>
                         </li>
 
                         <li>
