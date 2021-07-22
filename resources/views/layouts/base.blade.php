@@ -11,7 +11,8 @@
         @endif
 
         <!-- Favicon -->
-		<link rel="shortcut icon" href="{{ url(asset('favicon.ico')) }}">
+		<!-- <link rel="shortcut icon" href="{{ url(asset('favicon.ico')) }}"> -->
+        <link rel="shortcut icon" href="http://zeitplans.com/img/favicon.ico">
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
@@ -32,7 +33,8 @@
         <!-- <script src="sweetalert2/dist/sweetalert2.all.min.js"></script> -->
 
         <!-- Alpine CDN -->
-        <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.2.2/dist/module.cjs.min.js"></script>
+        <!-- <script defer src="https://unpkg.com/alpinejs@3.2.2/dist/cdn.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine-ie11.min.js"></script>
 
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">

@@ -36,13 +36,13 @@ Route::post('/contact', [ContactController::class, 'store'])->name('contacts');
 Route::get('/emails', [EmailListController::class, 'show'])->name('emails');
 Route::get('/contacts', [ContactController::class, 'show'])->name('contacts');
 
-// Route::middleware('guest')->group(function () {
+Route::middleware('guest')->group(function () {
     Route::get('login', Login::class)
         ->name('login');
 
     Route::get('register', Register::class)
         ->name('register');
-// });
+ });
 
 Route::get('password/reset', Email::class)
     ->name('password.request');
