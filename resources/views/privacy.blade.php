@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<x-partials.header />
+@include('partials.header')
 <div class="p-16" >
     <h2 class="font-extrabold text-gray-800">Privacy Statement</h2>
 <p class="text-gray-900 text-base mb-5">
@@ -214,5 +214,5 @@ If you do not own a Zeitplans account, we may not be able to respond to requests
 <p class="text-gray-900 text-lg">
 Last Updated: June 16, 2021
 </div>
-<x-partials.footer />
+@include('partials.footer')
 @endsection

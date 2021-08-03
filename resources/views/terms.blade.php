@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<x-partials.header />
+@include('partials.header')
 <div class="p-16">
 
 <h1 class="text-2xl font-bold  text-center">Zeitplans Terms of Use</h1>
