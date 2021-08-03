@@ -12,16 +12,16 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\EmailListController;
 
-
 Route::view('/', 'home')->name('home');
 Route::view('/about', 'about')->name('about');
 Route::view('/jobs', 'jobs')->name('jobs');
 Route::view('/press', 'press')->name('press');
 Route::view('/terms', 'terms')->name('terms');
 Route::view('/privacy', 'privacy')->name('privacy');
+Route::view('/demo', 'demo')->name('demo');
 Route::post('/emailList', [EmailListController::class, 'store'])->name('emailList');
 Route::post('/contact', [ContactController::class, 'store'])->name('contacts');
- 
+
 Route::middleware('guest')->group(function () {
     Route::get('login', Login::class)
         ->name('login');

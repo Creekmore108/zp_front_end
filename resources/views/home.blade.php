@@ -4,33 +4,32 @@
  
 @include('partials.header')
 <div class="py-20">
-            
   <!-- Hero section -->
-    @include('partials.hero')
+  @include('partials.hero')
   
   <!-- Logo Cloud -->
-    @include('partials.logocloud')
+  @include('partials.logocloud')
 
   <!-- Alternating Feature Sections -->
-    @include('partials.altfeatures')
+  @include('partials.altfeatures')
 
   <!-- Gradient Feature Section -->
-    @include('partials.features')
+  @include('partials.features')
 
   <!-- FAQ section -->
-    @include('partials.faq')
+  @include('partials.faq')
 
   <!-- Pricing Section -->
-    @include('partials.pricing')
+  @include('partials.pricing')
 
   <!-- Contact Section -->
-    @include('partials.contact')
+  @include('partials.contact')
     
     <!-- CTA Section -->
     @include('partials.cta')
 </div>
     <!-- footer -->
-    @include('partials.footer') 
+    @include('partials.footer')
     @include('sweetalert::alert') 
     
 @endsection

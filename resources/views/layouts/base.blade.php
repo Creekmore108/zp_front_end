@@ -20,6 +20,9 @@
         <!-- Styles -->
         <link rel="stylesheet" href="{{ url(mix('css/app.css')) }}">
 
+        <!-- Full Calendar  -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.4.0/main.min.css">
+
         <!-- Tailwind CDN -->
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
@@ -27,6 +30,9 @@
 
         <!-- Scripts -->
         <script src="{{ url(mix('js/app.js')) }}" defer></script>
+
+        <!-- Full Calendar -->
+        <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.0/main.min.js"></script>
 
         <!-- Sweet Alert -->
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>

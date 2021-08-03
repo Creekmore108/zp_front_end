@@ -67,7 +67,7 @@
                         </li>
 
                         <li>
-                        <a href="{{ route('home') }}/?#contact" class="eight text-base text-gray-200 hover:text-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
+                        <a href="/demo" class="text-base text-gray-200 hover:text-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
                             Live Demo</a>
                         </li>
 
