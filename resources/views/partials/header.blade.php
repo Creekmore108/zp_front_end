@@ -116,7 +116,7 @@
             </a>
 
             <a href="/demo"  x-on:click="open = ! open" class="ten -m-3 p-3 flex items-center text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
-              <x-icon.currency-dollar/>
+              <x-icon.sparkles/>
               <span class="nine ml-3 text-gray-300 hover:bg-gray-700 hover:text-yellow-600 px-3 py-2 rounded-md text-lg font-bold focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
                 Live Demo
               </span>
