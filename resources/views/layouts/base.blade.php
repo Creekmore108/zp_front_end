@@ -40,7 +40,12 @@
 
         <!-- Alpine CDN -->
         <!-- <script defer src="https://unpkg.com/alpinejs@3.2.2/dist/cdn.min.js"></script> -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine-ie11.min.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine-ie11.min.js"></script> -->
+        <!-- Alpine Plugins -->
+        <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+        
+        <!-- Alpine Core -->
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-VLH0NXKC0P"></script>

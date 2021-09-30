@@ -1,9 +1,9 @@
 <section id="faq" class="mt-3">
-    <div class="relative bg-gray-600 rounded-2xl">
-    <div class="h-60 absolute bottom-0 xl:inset-0 xl:h-full xl:w-full">
+    <div class="relative bg-gray-600 rounded-2xl scale:false">
+    <div class="h-60 absolute bottom-0 xl:inset-0 xl:h-full xl:w-full ">
     <div class="h-full w-full xl:grid xl:grid-cols-2">
-      <div class="h-full xl:relative xl:col-start-2">
-        <img class="h-full w-full object-cover opacity-40 xl:absolute xl:inset-0" src="{{ asset('/img/workspace.jpg') }}">
+      <div class="h-full xl:relative xl:col-start-2 ">
+        <img class="h-full w-full object-cover opacity-40 xl:absolute xl:inset-0 " src="{{ asset('/img/workspace.jpg') }}">
           <div aria-hidden="true" class="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-600 xl:inset-y-0 xl:left-0 xl:h-full xl:w-32 xl:bg-gradient-to-r"></div>
       </div>
     </div>
@@ -14,98 +14,92 @@
           <p class="text-lg mt-7 text-gray-300">If you do not find the answers to your questions listed below please feel free to contact us.</p>
           <div class="mt-10 flex-col mb-10" >
     
-            <div class="col-span-full my-10" x-data="{ open: false }">
+            <div class="col-span-full my-10" x-data="{ expanded: false }">
                 <div>
-                  <div class="text-white font-bold cursor-pointer inline-flex" @mouseover="open = true" @mouseleave="open = false" >
-                    <div x-data="{ open: true }" class="mr-2">
-
-                    <x-icon.chevron-right />
-                      
+                  <div class="text-white font-bold cursor-pointer inline-flex" @mouseover="expanded = true" @mouseleave="expanded = false" >
+                    <div class="mr-2">
+                      <div x-show="!expanded" x-collapse ><x-icon.chevron-right /></div>
+                      <div x-show="expanded" x-collapse ><x-icon.chevron-down /></div>
                     </div>
                   Which plan is right for my organization?
                   </div>
-                  <div  x-show="open"  class="col-span-full text-gray-100 font-normal transition ease-in-out duration-1000 pl-7">
+                  <div  x-show="expanded" x-collapse x-collapse.duration.1000ms class="col-span-full text-gray-100 font-normal transition ease-in-out duration-1000 pl-7">
                     We understand that each organization is unique, requiring specific features to support its members and reporting needs. Above you can see the features included in the different plans to support your needs.
                   </div>
                 </div>
             </div> 
 
-            <div class="col-span-full my-6" x-data="{ open: false }">
+            <div class="col-span-full my-6" x-data="{ expanded: false }">
                 <div>
-                  <div class="text-white font-bold cursor-pointer inline-flex" @mouseover="open = true" @mouseleave="open = false" >
-                    <div x-data="{ open: true }" class="mr-2">
-                      
-                    <x-icon.chevron-right />
-
+                  <div class="text-white font-bold cursor-pointer inline-flex" @mouseover="expanded = true" @mouseleave="expanded = false" >
+                    <div class="mr-2">
+                      <div x-show="!expanded" x-collapse ><x-icon.chevron-right /></div>
+                      <div x-show="expanded" x-collapse ><x-icon.chevron-down /></div>
                     </div>
                     Can I access Zeitplans on my smartphone?
                   </div>
-                  <div  x-show="open"  class="col-span-full text-gray-100 font-normal transition ease-in-out duration-1000 pl-7">
+                  <div  x-show="expanded" x-collapse x-collapse.duration.1000ms class="col-span-full text-gray-100 font-normal transition ease-in-out duration-1000 pl-7">
                   Yes, all functionality is mobile friendly.
                   </div>
                 </div>
             </div> 
 
-            <div class="col-span-full my-6" x-data="{ open: false }">
+            <div class="col-span-full my-6" x-data="{ expanded: false }">
                 <div>
-                  <div class="text-white font-bold cursor-pointer inline-flex" @mouseover="open = true" @mouseleave="open = false" >
-                    <div x-data="{ open: true }" class="mr-2">
-                      
-                    <x-icon.chevron-right />
-
+                  <div class="text-white font-bold cursor-pointer inline-flex" @mouseover="expanded = true" @mouseleave="expanded = false" >
+                    <div class="mr-2">
+                      <div x-show="!expanded" x-collapse ><x-icon.chevron-right /></div>
+                      <div x-show="expanded" x-collapse ><x-icon.chevron-down /></div>
                     </div>
                     What if I change my mind?
                   </div>
-                  <div  x-show="open"  class="col-span-full text-gray-100 font-normal transition ease-in-out duration-1000 pl-7">
+                  <div  x-show="expanded" x-collapse x-collapse.duration.1000ms  class="col-span-full text-gray-100 font-normal transition ease-in-out duration-1000 pl-7">
                   If you’ve paid for a yearly subscription in the last 30-days, and need to cancel your account, you are entitled to a prorated refund. We will automatically refund you the remaining balance from your original purchase. Simply cancel the account from the Admin section, and your account will be automatically refunded. If you have any questions, you can always reach out to support@Zeitplans.com
                   </div>
                 </div>
             </div> 
 
-            <div class="col-span-full my-6" x-data="{ open: false }">
+            <div class="col-span-full my-6" x-data="{ expanded: false }">
                 <div>
-                  <div class="text-white font-bold cursor-pointer inline-flex" @mouseover="open = true" @mouseleave="open = false" >
-                    <div x-data="{ open: true }" class="mr-2">
-                      
-                    <x-icon.chevron-right />
-
+                  <div class="text-white font-bold cursor-pointer inline-flex" @mouseover="expanded = true" @mouseleave="expanded = false" >
+                    <div class="mr-2">
+                      <div x-show="!expanded" x-collapse ><x-icon.chevron-right /></div>
+                      <div x-show="expanded" x-collapse ><x-icon.chevron-down /></div>
                     </div>
                   What will the URL to my account look like?
                   </div>
-                  <div  x-show="open"  class="col-span-full text-gray-100 font-normal transition ease-in-out duration-1000 pl-7">
+                  <div  x-show="expanded" x-collapse x-collapse.duration.1000ms class="col-span-full text-gray-100 font-normal transition ease-in-out duration-1000 pl-7">
                   You will be able to choose a subdomain name ( OrgName.Zeitplans.com ) when you signup.
                   </div>
                 </div>
             </div> 
 
 
-            <div class="col-span-full my-6" x-data="{ open: false }">
+            <div class="col-span-full my-6" x-data="{ expanded: false }">
                 <div>
-                  <div class="text-white font-bold cursor-pointer inline-flex" @mouseover="open = true" @mouseleave="open = false" >
-                    <div x-data="{ open: true }" class="mr-2">
-                      
-                    <x-icon.chevron-right />
-
+                  <div class="text-white font-bold cursor-pointer inline-flex" @mouseover="expanded = true" @mouseleave="expanded = false" >
+                    <div class="mr-2">
+                      <div x-show="!expanded" x-collapse ><x-icon.chevron-right /></div>
+                      <div x-show="expanded" x-collapse ><x-icon.chevron-down /></div>
                     </div>
                     How secure is Zeitplans.com?
                   </div>
-                  <div  x-show="open"  class="col-span-full text-gray-100 font-normal transition ease-in-out duration-1000 pl-7">
+                  <div  x-show="expanded" x-collapse x-collapse.duration.1000ms   class="col-span-full text-gray-100 font-normal transition ease-in-out duration-1000 pl-7">
                     The security of our customer’s data is our top priority. Zeitplans.com is built with strict security requirements and protocols to secure your data, such as ISO/IEC 27001 and ISO/IEC 27018, and is undergoing annual security audits and assessments. We use high physical, procedural, and technical security measures to preserve the integrity and security of your data, as well as adhering to the strictest data protection laws.
                   </div>
                 </div>
             </div> 
 
-            <div class="col-span-full my-6 mb-20" x-data="{ open: false }">
+            <div class="col-span-full my-6 mb-20" x-data="{ expanded: false }">
                 <div>
-                  <div class="text-white font-bold cursor-pointer inline-flex" @mouseover="open = true" @mouseleave="open = false" >
-                    <div x-data="{ open: true }" class="mr-2">
-                      
-                    <x-icon.chevron-right />
-                    
+                  <div class="text-white font-bold cursor-pointer inline-flex" @mouseover="expanded = true" @mouseleave="expanded = false" >
+                    <div class="mr-2">
+                      <div x-show="!expanded" x-collapse ><x-icon.chevron-right /></div>
+                      <div x-show="expanded" x-collapse ><x-icon.chevron-down /></div>
                     </div>
                     What payment types do you accept?
                   </div>
-                  <div  x-show="open"  class="col-span-full text-gray-100 font-normal transition ease-in-out duration-1000 pl-7">
+                  <div   x-show="expanded" x-collapse x-collapse.duration.1000ms class="col-span-full text-gray-100 font-normal transition ease-in-out duration-1000 pl-7">
                   We accept the following payment methods: All the major credit cards (excluding debit cards) - Visa, Master Card, American Express, Discover. You can also purchase your Zeitplans.com subscription with PayPal.
                   </div>
                 </div>
