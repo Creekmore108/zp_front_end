@@ -158,7 +158,7 @@
                                         {{ Auth::user()->username }} 
                                     @endauth
                                     </p>
-                                    <p class="text-xs leading-4 font-medium text-indigo-300 group-hover:text-indigo-100 transition ease-in-out duration-150">
+                                    <p class="text-xs leading-4 font-medium group-hover:text-indigo-100 transition ease-in-out duration-150">
                                         View profile
                                     </p>
                                 </a>

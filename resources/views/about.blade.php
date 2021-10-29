@@ -41,7 +41,7 @@
             Zeitplan is German for schedule and since this application is primarily to be used for scheduling it was an easy fit for the name and the domain name was available.
           </p>
           <p class="text-base leading-7">
-            Zeitplans is a small company located in Boulder Colorado with only a couple team members at the moment but as we plan our growth over the next five years we will be hiring accordingly.
+            Zeitplans is a small company located in Boulder Co with a small team members at the moment but as we plan our growth over the next five years we will be hiring accordingly.
           </p>
         </div>
       </div>
