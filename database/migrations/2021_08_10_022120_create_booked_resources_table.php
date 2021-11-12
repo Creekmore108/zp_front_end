@@ -15,34 +15,18 @@ class CreateBookedResourcesTable extends Migration
     {
         Schema::create('booked_resources', function (Blueprint $table) {
             $table->id();
-            $table->text('title');
-            $table->string('userName');
-            $table->string('resourceTitle');
-            $table->string('resourceLocation');
-            $table->boolean('executed');
-            $table->boolean('billable');
-            $table->integer('cancellationRule');
-            $table->string('groupId');
-            $table->boolean('allDay');
-            $table->dateTime('start');
-            $table->dateTime('end');
-            $table->string('startStr');
-            $table->string('endStr');
-            $table->string('title');
-            $table->string('url');
-            $table->string('classNames');
-            $table->boolean('editable');
-            $table->boolean('startEditable');
-            $table->boolean('durationEditable');
-            $table->boolean('resourceEditable');
-            $table->string('display');
-            $table->string('overlap');
-            $table->string('constraint');
-            $table->string('backgroundColor');
-            $table->string('borderColor');
-            $table->string('textColor');
-            $table->string('extendedProps');
-            $table->string('source');
+            $table->text('title')->nullable();
+            $table->datetime('start_date')->nullable();
+            $table->datetime('end_date')->nullable();
+            $table->string('background_color')->nullable();
+            $table->string('text_color')->nullable();
+            $table->string('user_name');
+            $table->string('resource_title');
+            $table->string('location');
+            $table->boolean('executed')->default(0);
+            $table->boolean('cancelled')->default(0);
+            $table->boolean('billable')->default(0);
+            $table->integer('cancellation_rule');
             $table->timestamps();
         });
     }

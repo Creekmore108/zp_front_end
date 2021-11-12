@@ -191,31 +191,13 @@
 
             <main class="flex-1 relative z-0 overflow-y-auto pt-2 pb-6 focus:outline-none md:py-6" tabindex="0" x-data="" x-init="$el.focus()">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-                    <h1 class="text-2xl font-semibold text-gray-900">Seattle Potters - Dashboard</h1>
-
-                    <div id="calendar-container" >  
-                        <div id='calendar'></div>
-                    </div>
+                    <h1 class="text-2xl font-semibold text-gray-900">Colorado Artisans - Dashboard</h1>
+                   
+                    <livewire:booked-resources />
+                        @livewireScripts
+                        @stack('scripts')
                 </div>
             </main>
         </div>
 
     </div>
-    <script>
-
-    document.addEventListener('DOMContentLoaded', function() {
-      var calendarEl = document.getElementById('calendar');
-      var calendar = new FullCalendar.Calendar(calendarEl, {
-        timeZone: 'local',
-        headerToolbar: {left: 'prev,next today',
-          center: 'title',
-          right: 'dayGridMonth,timeGridWeek,timeGridDay'},
-          editable: true,
-          weekNumbers: false,
-          dayMaxEvents: false,
-          
-      });
-      calendar.render();
-    });
-
-  </script> 
