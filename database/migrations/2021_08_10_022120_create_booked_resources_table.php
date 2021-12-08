@@ -26,7 +26,7 @@ class CreateBookedResourcesTable extends Migration
             $table->boolean('executed')->default(0);
             $table->boolean('cancelled')->default(0);
             $table->boolean('billable')->default(0);
-            $table->integer('cancellation_rule');
+            $table->integer('cancellation_rule')->nullable();
             $table->timestamps();
         });
     }

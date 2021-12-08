@@ -11,6 +11,7 @@ use App\Http\Livewire\Auth\Verify;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\EmailListController;
+use App\Http\Controllers\BookedResourceController;
 
 Route::view('/', 'home')->name('home');
 Route::view('/about', 'about')->name('about');
@@ -21,6 +22,9 @@ Route::view('/privacy', 'privacy')->name('privacy');
 Route::view('/demo', 'demo')->name('demo');
 Route::post('/emailList', [EmailListController::class, 'store'])->name('emailList');
 Route::post('/contact', [ContactController::class, 'store'])->name('contacts');
+Route::post('/new_event', [BookedResourceController::class, 'store'])->name('new_event');
+Route::get('/new', [BookedResourceController::class, 'index']);
+
 
 Route::middleware('guest')->group(function () {
     Route::get('login', Login::class)
