@@ -38,29 +38,29 @@
               <div>
                 <label for="start" class="block text-sm font-medium text-gray-700">Start</label>
                 <div class="mt-1">
-                  <input type="date" name="start" id="start"  value="{{ old('start') }}" placeholder="Start Date" class="block w-full shadow-sm sm:text-sm focus:ring-yellow-600  focus:border-yellow-600 border-gray-300 rounded-md">
-                  @error('start') <span class="text-red-600">{{ $message }}</span> @enderror
+                  <input type="date" name="start_date" id="start_date"  value="{{ old('start_date') }}" placeholder="Start Date" class="block w-full shadow-sm sm:text-sm focus:ring-yellow-600  focus:border-yellow-600 border-gray-300 rounded-md">
+                  @error('start_date') <span class="text-red-600">{{ $message }}</span> @enderror
                 </div>
               </div>
               <div>
                 <label for="end" class="block text-sm font-medium text-gray-700">End</label>
                 <div class="mt-1">
-                  <input type="date" name="end" id="end" value="{{ old('end') }}" placeholder="End Date" class="block w-full shadow-sm sm:text-sm focus:ring-yellow-600 focus:border-yellow-600 border-gray-300 rounded-md">
-                  @error('end') <span class="text-red-600">{{ $message }}</span> @enderror
+                  <input type="date" name="end_date" id="end_date" value="{{ old('end_date') }}" placeholder="End Date" class="block w-full shadow-sm sm:text-sm focus:ring-yellow-600 focus:border-yellow-600 border-gray-300 rounded-md">
+                  @error('end_date') <span class="text-red-600">{{ $message }}</span> @enderror
                 </div>
               </div>
               <div>
-                <label for="backgroundColor" class="block text-sm font-medium text-gray-700">Background Color</label>
+                <label for="background_color" class="block text-sm font-medium text-gray-700">Background Color</label>
                 <div class="mt-1">
-                  <input type="text" name="backgroundColor" id="backgroundColor"  value="{{ old('backgroundColor') }}" placeholder="Background Color" class="block w-full shadow-sm sm:text-sm focus:ring-yellow-600  focus:border-yellow-600 border-gray-300 rounded-md">
-                  @error('backgroundColor') <span class="text-red-600">{{ $message }}</span> @enderror
+                  <input type="text" name="background_color" id="background_color"  value="{{ old('background_color') }}" placeholder="Background Color" class="block w-full shadow-sm sm:text-sm focus:ring-yellow-600  focus:border-yellow-600 border-gray-300 rounded-md">
+                  @error('background_color') <span class="text-red-600">{{ $message }}</span> @enderror
                 </div>
               </div>
               <div>
-                <label for="textColor" class="block text-sm font-medium text-gray-700">Text Color</label>
+                <label for="text_color" class="block text-sm font-medium text-gray-700">Text Color</label>
                 <div class="mt-1">
-                  <input type="text" name="textColor" id="textColor" value="{{ old('textColor') }}" placeholder="Text Color" class="block w-full shadow-sm sm:text-sm focus:ring-yellow-600 focus:border-yellow-600 border-gray-300 rounded-md">
-                  @error('textColor') <span class="text-red-600">{{ $message }}</span> @enderror
+                  <input type="text" name="text_color" id="text_color" value="{{ old('text_color') }}" placeholder="Text Color" class="block w-full shadow-sm sm:text-sm focus:ring-yellow-600 focus:border-yellow-600 border-gray-300 rounded-md">
+                  @error('text_color') <span class="text-red-600">{{ $message }}</span> @enderror
                 </div>
               </div>
               

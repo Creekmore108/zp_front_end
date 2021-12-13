@@ -44,10 +44,10 @@ class BookedResourceController extends Controller
             'resource_title' => 'required',
             'user_name' => 'required', 
             'location' => '',
-            'start' => 'required',
-            'end' => 'required',
-            'backgroundColor' => '',
-            'textColor' => '',
+            'start_date' => 'required',
+            'end_date' => 'required',
+            'background_color' => '',
+            'text_color' => '',
 
         ]);
         

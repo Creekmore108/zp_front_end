@@ -32,7 +32,7 @@ class BookedResources extends Component
      */
     public function getevent()
     {
-        $events = BookedResource::select('id','title','start','end')->get();
+        $events = BookedResource::select('id','title','start_date','end_date')->get();
 
         return json_encode($events);
     }
@@ -47,8 +47,8 @@ class BookedResources extends Component
     public function addevent($event)
     {
         $input['title'] = $event['title'];
-        $input['start'] = $event['start'];
-        $input['end'] = $event['end'];
+        $input['start_date'] = $event['start_date'];
+        $input['end_date'] = $event['end_date'];
         BookedResource::create($input);
         return redirect('/');
     }
@@ -64,8 +64,8 @@ class BookedResources extends Component
     {
         // dd($event);
         $eventdata = BookedResource::find($event['extendedProps']['id']);
-        $eventdata->start = $event['start'];
-        $eventdata->end = $event['end'];
+        $eventdata->start_date = $event['start'];
+        $eventdata->end_date = $event['end'];
         $eventdata->save();
         
     }
