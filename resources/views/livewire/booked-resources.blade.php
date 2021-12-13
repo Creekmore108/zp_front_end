@@ -22,10 +22,10 @@
                 {
                 title:'{{ $event->title . ' - '. $event->resource_title . ' - '. $event->user_name}}',
                 description:'{{ $event->location }}',
-                start:'{{ $event->start }}',
-                end:'{{ $event->end }}',
-                backgroundColor:'{{ $event->backgroundColor }}',
-                textColor:'{{ $event->textColor }}',
+                start:'{{ $event->start_date }}',
+                end:'{{ $event->end_date }}',
+                backgroundColor:'{{ $event->background_color }}',
+                textColor:'{{ $event->text_color }}',
                 extendedProps: {
                     id: '{{ $event->id }}'
                     }, 

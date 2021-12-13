@@ -148,7 +148,7 @@
                 <div class="flex-shrink-0 flex border-t border-yellow-600 p-4">
                         <div class="flex items-center">
                             <div>
-                                <img class="inline-block h-9 w-9 rounded-full" src="{{ auth()->user()->avatarUrl() }}" alt="Profile Photo">
+                                {{-- <img class="inline-block h-9 w-9 rounded-full" src="{{ auth()->user()->avatarUrl() }}" alt="Profile Photo"> --}}
                             </div>
 
                             <div class="ml-3">
