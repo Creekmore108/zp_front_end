@@ -59,7 +59,8 @@ class BookedResourceController extends Controller
         
         Alert::success('success','Success!!!');
         
-        return Redirect::to(URL::previous());
+        // return Redirect::to(URL::previous());
+        return redirect('/demo');
     }
 
     /**
