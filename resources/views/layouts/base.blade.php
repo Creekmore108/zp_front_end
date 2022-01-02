@@ -65,52 +65,8 @@
         @yield('body')
 
         @livewireScripts
-
-        <script>
-            // menu item Live Demo in header.blade.php
-            document.querySelector(".one").addEventListener('click', function(){ 
-            Swal.fire({title: 'We are still in development',text: 'subscribe to our email list to be notified when we are in production',confirmButtonColor: '#D97706',
-            showClass: {popup: 'animate__animated animate__fadeInDown'},hideClass: {popup: 'animate__animated animate__fadeOutUp'}})})
-                
-            // two and three are in Hero button in hero.blade.php
-            document.querySelector(".two").addEventListener('click', function(){ 
-            Swal.fire({title: 'We are still in development',text: 'subscribe to our email list to be notified when we are in production',confirmButtonColor: '#D97706',
-            showClass: {popup: 'animate__animated animate__fadeInDown'},hideClass: {popup: 'animate__animated animate__fadeOutUp'}})})
-
-            document.querySelector(".three").addEventListener('click', function(){ 
-            Swal.fire({title: 'We are still in development',text: 'subscribe to our email list to be notified when we are in production',confirmButtonColor: '#D97706',
-            showClass: {popup: 'animate__animated animate__fadeInDown'},hideClass: {popup: 'animate__animated animate__fadeOutUp'}})})
-              
-            // four and five are in alternatFeature.blade.php
-            document.querySelector(".four").addEventListener('click', function(){ 
-            Swal.fire({title: 'We are still in development',text: 'subscribe to our email list to be notified when we are in production',confirmButtonColor: '#D97706',
-            showClass: {popup: 'animate__animated animate__fadeInDown'},hideClass: {popup: 'animate__animated animate__fadeOutUp'}})})
-
-            document.querySelector(".five").addEventListener('click', function(){ 
-            Swal.fire({title: 'We are still in development',text: 'subscribe to our email list to be notified when we are in production',confirmButtonColor: '#D97706',
-            showClass: {popup: 'animate__animated animate__fadeInDown'},hideClass: {popup: 'animate__animated animate__fadeOutUp'}})})
-
-            //  pricing block in components
-            document.querySelector(".six").addEventListener('click', function(){ 
-            Swal.fire({title: 'We are still in development',text: 'subscribe to our email list to be notified when we are in production',confirmButtonColor: '#D97706',
-            showClass: {popup: 'animate__animated animate__fadeInDown'},hideClass: {popup: 'animate__animated animate__fadeOutUp'}})})
-
-            // cta.blade.php
-            document.querySelector(".seven").addEventListener('click', function(){ 
-            Swal.fire({title: 'We are still in development',text: 'subscribe to our email list to be notified when we are in production',confirmButtonColor: '#D97706',
-            showClass: {popup: 'animate__animated animate__fadeInDown'},hideClass: {popup: 'animate__animated animate__fadeOutUp'}})})
-
-            // footer.blade.php
-            document.querySelector(".eight").addEventListener('click', function(){ 
-            Swal.fire({title: 'We are still in development',text: 'subscribe to our email list to be notified when we are in production',confirmButtonColor: '#D97706',
-            showClass: {popup: 'animate__animated animate__fadeInDown'},hideClass: {popup: 'animate__animated animate__fadeOutUp'}})})
-
-            // mobile menu item in header.blade.php
-            document.querySelector(".nine").addEventListener('click', function(){ 
-            Swal.fire({title: 'We are still in development',text: 'subscribe to our email list to be notified when we are in production',confirmButtonColor: '#D97706',
-            showClass: {popup: 'animate__animated animate__fadeInDown'},hideClass: {popup: 'animate__animated animate__fadeOutUp'}})})
+        <livewire:in-dev-modal />
         
-        
-        </script>
+    
     </body>
 </html>

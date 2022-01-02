@@ -50,7 +50,7 @@ class BookedResources extends Component
         $input['start_date'] = $event['start_date'];
         $input['end_date'] = $event['end_date'];
         BookedResource::create($input);
-        return redirect('/');
+        return redirect('/demo');
     }
         
     /**

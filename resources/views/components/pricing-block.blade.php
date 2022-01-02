@@ -25,7 +25,8 @@
             x-on:click="window.livewire.emitTo('contact-modal', 'show')">
             Get Started 
             </button> -->
-            <x-button class="four inline-flex mt-8 w-full px-4 py-2 font-extrabold rounded-md shadow-sm text-white text-center bg-gradient-to-r from-gray-600 to-gray-400 hover:from-gray-600 hover:to-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
+            <x-button  x-data="{}" 
+                        x-on:click="window.livewire.emitTo('in-dev-modal', 'show')" class="inline-flex mt-8 w-full px-4 py-2 font-extrabold rounded-md shadow-sm text-white text-center bg-gradient-to-r from-gray-600 to-gray-400 hover:from-gray-600 hover:to-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
             Get Started 
             </x-button>
             
