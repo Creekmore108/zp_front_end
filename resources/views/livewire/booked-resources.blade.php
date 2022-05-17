@@ -32,26 +32,6 @@
                 },
             @endforeach
             ],
-            // events: JSON.parse(data),
-            // dateClick(info)  {
-            //    var title = prompt('Enter Event Title');
-            //    var startdate = new Date(info.dateStr + 'T00:00:00');
-            //    var enddate = prompt('Enter End Date');
-
-            //    if(title != null && title != ''){
-            //      calendar.addEvent({
-            //         title: title,
-            //         start: startdate,
-            //         end: enddate,
-            //         allDay: false,
-            //       });
-            //      var eventAdd = {title: title,start: startdate, enddate};
-            //      @this.addevent(eventAdd);
-            //      alert('Great. Now, update your database...');
-            //    }else{
-            //     alert('Event Title Is Required');
-            //    }
-            // },
             editable: true,
             selectable: true,
             displayEventTime: false,
@@ -64,6 +44,9 @@
                 }
             },
             eventDrop: info => @this.eventDrop(info.event, info.oldEvent),
+            dateClick: function(info) {
+                window.Livewire.emitTo('in-dev-modal', 'show')
+            },
             loading: function(isLoading) {
                     if (!isLoading) {
                         // Reset custom events

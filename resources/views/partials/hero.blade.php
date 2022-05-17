@@ -21,8 +21,8 @@
                 <!-- <a href="#" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-black bg-gradient-to-r from-yellow-600 to-yellow-800 hover:text-white hover:from-yellow-800 hover:to-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
                   Get started
                 </a> -->
-                <!-- <x-button class=" inline-flex items-center px-4 py-3 border border-transparent rounded-md font-semibold tracking-widest text-black bg-gradient-to-r from-yellow-600 to-yellow-800 hover:text-white hover:from-yellow-800 hover:to-yellow-600 focus:ring-1 focus:ring-yellow-800 focus:outline-none focus:border-yellow-800 ring-yellow-800 disabled:opacity-25 transition ease-in-out duration-150"  >Live Demo</x-button> -->
-                <a href="/demo" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-black bg-gradient-to-r from-yellow-600 to-yellow-800 hover:text-white hover:from-yellow-800 hover:to-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
+                {{-- <x-button class=" inline-flex items-center px-4 py-3 border border-transparent rounded-md font-semibold tracking-widest text-black bg-gradient-to-r from-yellow-600 to-yellow-800 hover:text-white hover:from-yellow-800 hover:to-yellow-600 focus:ring-1 focus:ring-yellow-800 focus:outline-none focus:border-yellow-800 ring-yellow-800 disabled:opacity-25 transition ease-in-out duration-150"  >Live Demo</x-button> --> --}}
+                <a href="/demo" class="inline-flex items-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-black bg-gradient-to-r from-yellow-600 to-yellow-800 hover:text-white hover:from-yellow-800 hover:to-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600">
                   Live demo
                 </a>
               </div>

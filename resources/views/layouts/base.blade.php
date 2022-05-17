@@ -66,7 +66,6 @@
 
         @livewireScripts
         <livewire:in-dev-modal />
-        
-    
+        <livewire:resource-modal />
     </body>
 </html>

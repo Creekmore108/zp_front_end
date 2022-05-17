@@ -15,7 +15,7 @@
                             <x-icon.x />
                         </button>
                         <div>
-                            <x-icon.logo class="h-10 w-auto mt-5 mr-5"/>
+                            <a href="/"><x-icon.logo class="h-10 w-auto mt-5 mr-5"/></a>
 
                         </div>
                         
@@ -60,7 +60,7 @@
                         </a>
                         <a  class="eight hover:no-underline group flex items-center px-2 py-2 text-sm leading-5 font-medium  rounded-md text-black bg-gradient-to-r from-yellow-600 to-yellow-800 hover:text-white hover:from-yellow-800 hover:to-yellow-600 focus:outline-none  focus:ring-1 focus:ring-yellow-800 focus:border-yellow-600 focus:outline-none focus:border-yellow-800 focus:ring ring-yellow-800 disabled:opacity-25 transition ease-in-out duration-150">
                             <x-icon.chart-pie class="mr-3 h-6 w-6 text-white"></x-icon.chart-pie>
-                            Reports
+                            Reports1
                         </a>
                     </nav>
                 </div>
@@ -101,6 +101,12 @@
                             <x-icon.logo class="h-20 w-auto"></x-icon.logo>
                         </div>
                     </a>
+                    <div class="ml-20">
+                        <x-button
+                            x-data="{}" 
+                            x-on:click="window.livewire.emitTo('resource-modal', 'show')">Add
+                        </x-button>
+                    </div>
                     <div class="ml-20"><a href="/new">New Event</a></div>
                     <!-- Sidebar component, swap this element with another sidebar if you like -->
                     <nav class="mt-3 space-y-1 flex-1 px-2  bg-gray-600">
@@ -197,6 +203,7 @@
                     <h1 class="text-2xl font-semibold text-gray-900">Colorado Artisans - Dashboard</h1>
                    
                     <livewire:booked-resources />
+                    
                         @livewireScripts
                         @stack('scripts')
                 </div>
