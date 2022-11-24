@@ -56,5 +56,5 @@ Route::middleware('auth')->group(function () {
         ->name('logout');
 
     Route::get('/emails', [EmailListController::class, 'show'])->name('emails');
-    Route::get('/contacts', [ContactController::class, 'show'])->name('contacts');
+    // Route::get('/contacts', [ContactController::class, 'show'])->name('contacts');
 });
