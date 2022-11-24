@@ -26,6 +26,10 @@
         <!-- Tailwind CDN -->
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
+        <!-- Flat Picker CDN -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.9/flatpickr.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.9/themes/airbnb.min.css"> -->
+
         @livewireStyles
 
         <!-- Scripts -->
